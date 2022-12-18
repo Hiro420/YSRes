@@ -6,6 +6,9 @@ import subprocess
 sys.path.append("./py")
 from textmap import Textmap
 
+# Change CharacterID
+ParseCharacterID = 10000030
+
 # Change TextMapLanguage
 TextMapLanguage = "KR"
 '''
@@ -116,6 +119,95 @@ def ParseAvatarExcel():
     with open('./json/AvatarExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)
 
+def DumpAvatarSkillDepot():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarSkillDepotExcelConfigData.bin', './ksy/avatar_skill_depot.ksy']
+
+    with open('./json/Dump_AvatarSkillDepotExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+
+def ParseAvatarSkillDepot():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_AvatarSkillDepotExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+            output_block["id"] = block["id"]["value"]
+
+            if block["has_field_energy_skill"]:
+                output_block["energySkill"] = block["energy_skill"]["value"]
+
+            output_block["skills"] = [i["value"] for i in block["skills"]["data"]]
+            output_block["subSkills"] = [i["value"] for i in block["sub_skills"]["data"]]
+            
+            if block["has_field_attack_mode_skill"]:
+                output_block["attackModeSkill"] = block["attack_mode_skill"]["value"]
+            
+            output_block["extraAbilities"] = [i["data"] for i in block["extra_abilities"]["data"]]
+            output_block["talents"] = [i["value"] for i in block["talents"]["data"]]
+            output_block["talentStarName"] = block["talent_star_name"]["data"]
+
+            inherent_proud_skill_opens = []
+            for i in block["inherent_proud_skill_opens"]["data"]:
+                prop_proud = dict()
+                if i["has_field_proud_skill_group_id"]:
+                    prop_proud["proudSkillGroupId"] = i["proud_skill_group_id"]["value"]
+                
+                if i["has_field_need_avatar_promote_level"]:
+                    prop_proud["needAvatarPromoteLevel"] = i["need_avatar_promote_level"]["value"]
+                inherent_proud_skill_opens.append(prop_proud)
+            output_block["inherentProudSkillOpens"] = inherent_proud_skill_opens
+
+            output_block["skillDepotAbilityGroup"] = block["skill_depot_ability_group"]["data"]
+
+            output.append(output_block)
+
+    with open('./json/AvatarSkillDepotExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)
+
+
+
+def PrettyView():
+    global ParseCharacterID
+
+    with open("./json/TextMap_" + TextMapLanguage + ".json", "r", encoding='utf-8') as dump:
+        textMap = json.load(dump)
+
+        with open('./json/AvatarExcelConfigData.json', 'r') as dump:
+            ksy = json.load(dump)
+
+            for block in ksy:
+                if block["id"] == ParseCharacterID:
+                    print(textMap[str(block["nameTextMapHash"])])
+                    print(textMap[str(block["descTextMapHash"])])
+
+                    print(block["weaponType"])
+
+                    print(block["hpBase"])
+                    print(block["attackBase"])
+                    print(block["defenseBase"])
+                    print(block["critical"])
+                    print(block["criticalHurt"])
+
+
+# To-Do
+# FetterInfoExcelConfigData.json
+
+# AvatarPromoteExcelConfigData.json
+
+# Calculation
+# baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
+
+
 # GetAllTextmaps()
+
 # DumpAvatarExcel()
 # ParseAvatarExcel()
+
+# DumpAvatarSkillDepot()
+# ParseAvatarSkillDepot()
+
+# PrettyView()
