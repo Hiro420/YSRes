@@ -363,6 +363,73 @@ def ParseAvatarPromote():
     with open('./json/AvatarPromoteExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)  
 
+def DumpProudSkill():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/ProudSkillExcelConfigData.bin', './ksy/proud_skill.ksy']
+
+    with open('./json/Dump_ProudSkillExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+        
+def ParseProudSkill():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_ProudSkillExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+
+            output_block["proudSkillId"] = block["proud_skill_id"]["value"]
+            output_block["proudSkillGroupId"] = block["proud_skill_group_id"]["value"]
+            output_block["level"] = block["level"]["value"]
+            output_block["proudSkillType"] = block["proud_skill_type"]["value"]
+            output_block["nameTextMapHash"] = block["name"]["value"]
+            output_block["descTextMapHash"] = block["desc"]["value"]
+            output_block["unlockDescTextMapHash"] = block["unlock_desc"]["value"]
+            output_block["icon"] = block["icon"]["data"]
+
+            if block["has_field_coin_cost"]:
+                output_block["coinCost"] = block["coin_cost"]["value"]
+            
+            cost_items = []
+            for i in block["cost_items"]["data"]:
+                cost_item = dict()
+                if i["has_field_id"]:
+                    cost_item["id"] = i["id"]["value"]
+                if i["has_field_count"]:
+                    cost_item["count"] = i["count"]["value"]
+                cost_items.append(cost_item)
+            output_block["costItems"] = cost_items
+            
+            output_block["filterConds"] = [i["value"][19:].upper() for i in block["filter_conds"]["data"]]
+
+            if block["has_field_break_level"]:
+                output_block["breakLevel"] = block["break_level"]["value"]
+
+            output_block["paramDescList"] = [i["value"] for i in block["param_desc_list"]["data"]]
+            
+            
+            if block["has_field_life_effect_type"]:
+                output_block["lifeEffectType"] = block["life_effect_type"]["data"]
+            
+            output_block["lifeEffectParams"] = [i["data"] for i in block["life_effect_params"]["data"]]
+
+            if block["has_field_effective_for_team"]:
+                output_block["effectiveForTeam"] = block["effective_for_team"]
+            
+            output_block["openConfig"] = block["open_config"]["data"]
+            output_block["addProps"] = [{}, {}]
+            output_block["paramList"] = block["param_list"]["data"]
+
+            output.append(output_block)
+
+    with open('./json/ProudSkillExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)
+
+
+
+
 """
 def DumpAvatarSkillExcel():
     cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarSkillExcelConfigData.bin', './ksy/avatar_skill.ksy']
@@ -413,6 +480,8 @@ def PrettyView():
     with open('./json/FetterInfoExcelConfigData.json', 'r') as dump:
         FetterInfoExcelConfigData = json.load(dump)
 
+    with open('./json/ProudSkillExcelConfigData.json', 'r') as dump:
+        ProudSkillExcelConfigData = json.load(dump)
 
     """ (tsv format)
     Character Name
@@ -472,5 +541,8 @@ def PrettyView():
 
 # DumpFetterInfo()
 # ParseFetterInfo()
+
+# DumpProudSkill()
+# ParseProudSkill()
 
 PrettyView()
