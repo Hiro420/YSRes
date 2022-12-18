@@ -268,6 +268,41 @@ def ParseFetterInfo():
     with open('./json/FetterInfoExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)        
 
+def DumpAvatarTalent():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarTalentExcelConfigData.bin', './ksy/avatar_talent.ksy']
+
+    with open('./json/Dump_AvatarTalentExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+        
+def ParseAvatarTalent():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_AvatarTalentExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+
+            output_block["talentId"] = block["talent_id"]["value"]
+            output_block["nameTextMapHash"] = block["name"]["value"]
+            output_block["descTextMapHash"] = block["desc"]["value"]
+            output_block["icon"] = block["icon"]["data"]
+            
+            if block["has_field_prev_talent"]:
+                output_block["prevTalent"] = block["prev_talent"]["value"]
+
+            output_block["mainCostItemId"] = block["main_cost_item_id"]["value"]
+            output_block["mainCostItemCount"] = block["main_cost_item_count"]["value"]
+            output_block["openConfig"] = block["open_config"]["data"]
+            output_block["addProps"] = [{}, {}]
+            output_block["paramList"] = block["param_list"]["data"]
+            
+            output.append(output_block)
+
+    with open('./json/AvatarTalentExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)
 
 """
 def DumpAvatarSkillExcel():
@@ -320,7 +355,6 @@ def PrettyView():
 
 # To-Do
 # AvatarPromoteExcelConfigData.json
-# AvatarTalentExcelConfigData.json
 
 # Calculation
 # baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
@@ -336,6 +370,9 @@ def PrettyView():
 
 # DumpAvatarSkill()
 # ParseAvatarSkill()
+
+# DumpAvatarTalent()
+ParseAvatarTalent()
 
 # DumpFetterInfo()
 # ParseFetterInfo()
