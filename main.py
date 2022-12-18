@@ -304,6 +304,65 @@ def ParseAvatarTalent():
     with open('./json/AvatarTalentExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)
 
+def DumpAvatarPromote():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarPromoteExcelConfigData.bin', './ksy/avatar_promote.ksy']
+
+    with open('./json/Dump_AvatarPromoteExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+
+def ParseAvatarPromote():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_AvatarPromoteExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+
+            output_block["avatarPromoteId"] = block["avatar_promote_id"]["value"]
+            
+            if block["has_field_promote_level"]:
+                output_block["promoteLevel"] = block["promote_level"]["value"]
+                
+            if block["has_field_promote_audio"]:
+                output_block["promoteAudio"] = block["promote_audio"]["data"]
+                
+            if block["has_field_scoin_cost"]:
+                output_block["scoinCost"] = block["scoin_cost"]["value"]
+
+            cost_items = []
+            for i in block["cost_items"]["data"]:
+                cost_item = dict()
+                if i["has_field_id"]:
+                    cost_item["id"] = i["id"]["value"]
+                if i["has_field_count"]:
+                    cost_item["count"] = i["count"]["value"]
+                cost_items.append(cost_item)
+            output_block["costItems"] = cost_items
+
+            output_block["unlockMaxLevel"] = block["unlock_max_level"]["value"]
+
+            add_props = []
+            for i in block["add_props"]["data"]:
+                add_prop = dict()
+                if i["has_field_prop_type"]:
+                    add_prop["propType"] = i["prop_type"]["value"]
+                if i["has_field_value"]:
+                    add_prop["value"] = i["value"]
+                add_props.append(cost_item)
+            output_block["addProps"] = add_props
+
+            if block["has_field_required_player_level"]:
+                output_block["requiredPlayerLevel"] = block["required_player_level"]["value"]
+
+
+            output.append(output_block)
+
+    with open('./json/AvatarPromoteExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)  
+
 """
 def DumpAvatarSkillExcel():
     cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarSkillExcelConfigData.bin', './ksy/avatar_skill.ksy']
@@ -355,6 +414,7 @@ def PrettyView():
 
 # To-Do
 # AvatarPromoteExcelConfigData.json
+# PrettyView()
 
 # Calculation
 # baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
@@ -372,9 +432,10 @@ def PrettyView():
 # ParseAvatarSkill()
 
 # DumpAvatarTalent()
-ParseAvatarTalent()
+# ParseAvatarTalent()
+
+# DumpAvatarPromote()
+# ParseAvatarPromote()
 
 # DumpFetterInfo()
 # ParseFetterInfo()
-
-# PrettyView()
