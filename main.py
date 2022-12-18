@@ -168,7 +168,88 @@ def ParseAvatarSkillDepot():
     with open('./json/AvatarSkillDepotExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)
 
+def DumpAvatarSkill():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarSkillExcelConfigData.bin', './ksy/avatar_skill.ksy']
 
+    with open('./json/Dump_AvatarSkillExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+
+def ParseAvatarSkill():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_AvatarSkillExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+            output_block["id"] = block["id"]["value"]
+            output_block["nameTextMapHash"] = block["name"]["value"]
+            output_block["abilityName"] = block["ability_name"]["data"]
+            output_block["descTextMapHash"] = block["desc"]["value"]
+            output_block["skillIcon"] = block["skill_icon"]["data"]
+            
+            if block["has_field_cd_time"]:
+                output_block["cdTime"] = block["cd_time"]
+
+            if block["has_field_cost_elem_type"]:
+                output_block["costElemType"] = block["cost_elem_type"]["value"][13:].title()
+            if block["has_field_cost_elem_val"]:
+                output_block["costElemVal"] = block["cost_elem_val"]
+
+            if block["has_field_cost_stamina"]:
+                output_block["costStamina"] = block["cost_stamina"]
+            
+            output_block["maxChargeNum"] = block["max_charge_num"]["value"]
+            
+            if block["has_field_trigger_id"]:
+                output_block["triggerID"] = block["trigger_id"]["value"]
+            
+            output_block["lockShape"] = block["lock_shape"]["data"]
+            output_block["lockWeightParams"] = block["lock_weight_params"]["data"]
+            
+            if block["has_field_is_attack_camera_lock"]:
+                output_block["isAttackCameraLock"] = bool(block["is_attack_camera_lock"])
+            
+            output_block["buffIcon"] = block["buff_icon"]["data"]
+
+            if block["has_field_proud_skill_group_id"]:
+                output_block["proudSkillGroupId"] = block["proud_skill_group_id"]["value"]
+            
+            output_block["globalValueKey"] = block["global_value_key"]["data"]
+
+            output.append(output_block)
+
+    with open('./json/AvatarSkillExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)
+
+
+"""
+def DumpAvatarSkillExcel():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarSkillExcelConfigData.bin', './ksy/avatar_skill.ksy']
+
+    with open('./json/Dump_AvatarSkillExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+        
+def ParseAvatarSkillExcel():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_AvatarSkillExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+
+            # parse contents
+
+            output.append(output_block)
+
+    with open('./json/AvatarSkillExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)        
+"""
 
 def PrettyView():
     global ParseCharacterID
@@ -209,5 +290,8 @@ def PrettyView():
 
 # DumpAvatarSkillDepot()
 # ParseAvatarSkillDepot()
+
+# DumpAvatarSkill()
+# ParseAvatarSkill()
 
 # PrettyView()
