@@ -14,7 +14,8 @@ Place binary files in `YSRes/bin` from the blks using [Studio](https://gitlab.co
 
 # Future Goals
 
-Make pretty character stats output
+- Make pretty character stats output
+- Parse ConfigAvatar to fix embryo issue
 
 # Credit
 - partypooper for the original [KaitaiDumper](https://github.com/partypooperarchive/KaitaiDumper)

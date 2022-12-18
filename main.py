@@ -390,35 +390,68 @@ def ParseAvatarSkillExcel():
 """
 
 def PrettyView():
-    global ParseCharacterID
+    global ParseCharacterID, TextMapLanguage
 
     with open("./json/TextMap_" + TextMapLanguage + ".json", "r", encoding='utf-8') as dump:
         textMap = json.load(dump)
 
-        with open('./json/AvatarExcelConfigData.json', 'r') as dump:
-            ksy = json.load(dump)
+    with open('./json/AvatarExcelConfigData.json', 'r') as dump:
+        AvatarExcelConfigData = json.load(dump)
 
-            for block in ksy:
-                if block["id"] == ParseCharacterID:
-                    print(textMap[str(block["nameTextMapHash"])])
-                    print(textMap[str(block["descTextMapHash"])])
+    with open('./json/AvatarSkillExcelConfigData.json', 'r') as dump:
+        AvatarSkillExcelConfigData = json.load(dump)
 
-                    print(block["weaponType"])
+    with open('./json/AvatarSkillDepotExcelConfigData.json', 'r') as dump:
+        AvatarSkillDepotExcelConfigData = json.load(dump)
 
-                    print(block["hpBase"])
-                    print(block["attackBase"])
-                    print(block["defenseBase"])
-                    print(block["critical"])
-                    print(block["criticalHurt"])
+    with open('./json/AvatarTalentExcelConfigData.json', 'r') as dump:
+        AvatarTalentExcelConfigData = json.load(dump)
+
+    with open('./json/AvatarPromoteExcelConfigData.json', 'r') as dump:
+        AvatarPromoteExcelConfigData = json.load(dump)
+
+    with open('./json/FetterInfoExcelConfigData.json', 'r') as dump:
+        FetterInfoExcelConfigData = json.load(dump)
 
 
-# To-Do
-# AvatarPromoteExcelConfigData.json
-# PrettyView()
+    """ (tsv format)
+    Character Name
+    Rarity
+    Weapon
+    baseHP (Lv 90) # baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
+    baseATK (Lv 90)
+    baseDEF (Lv 90)
+    bonusStat
 
-# Calculation
-# baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
+    Promote Cost
+    1 ~~~ x1, ~~~ x3, ~~~x5
+    2 ~~~ x1, ~~~ x3, ~~~x5
+    ...
+    6 ~~~ x1, ~~~ x3, ~~~x5
 
+    Skill Upgrade Cost
+    2 ~~~ x1, ~~~ x3, ~~~x5
+    3 ~~~ x1, ~~~ x3, ~~~x5
+    ...
+    10 ~~~ x1, ~~~ x3, ~~~x5
+
+    Constellations
+    Name Description
+
+    Passives
+    Name Description
+
+    Normal Attack
+    Name
+    Description
+    Modifier Lv.1 Lv.2 ... Lv.10
+    Multiplier a b c ...
+
+    Elemental Skill
+
+    Elemental Burst
+
+    """
 
 # GetAllTextmaps()
 
@@ -439,3 +472,5 @@ def PrettyView():
 
 # DumpFetterInfo()
 # ParseFetterInfo()
+
+PrettyView()
