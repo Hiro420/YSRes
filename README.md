@@ -21,3 +21,4 @@ Place binary files in `YSRes/bin` from the blks using [Studio](https://gitlab.co
 - partypooper for the original [KaitaiDumper](https://github.com/partypooperarchive/KaitaiDumper)
 - WeedwackerPS for the [DataParser](https://github.com/WeedwackerPS/DataParser)
 - Raz for [Studio](https://gitlab.com/RazTools/Studio)
+- ToaHartor for [GenshinScripts](https://github.com/ToaHartor/GenshinScripts)
