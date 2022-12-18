@@ -224,6 +224,50 @@ def ParseAvatarSkill():
     with open('./json/AvatarSkillExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)
 
+def DumpFetterInfo():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/FetterInfoExcelConfigData.bin', './ksy/fetter_info.ksy']
+
+    with open('./json/Dump_FetterInfoExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+        
+def ParseFetterInfo():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_FetterInfoExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+
+            # parse contents
+            if block["has_field_info_birth_month"]:
+                output_block["infoBirthMonth"] = block["info_birth_month"]["value"]
+            
+            if block["has_field_info_birth_day"]:
+                output_block["infoBirthDay"] = block["info_birth_day"]["value"]
+            
+            output_block["avatarNativeTextMapHash"] = block["avatar_native"]["value"]
+            output_block["avatarVisionBeforTextMapHash"] = block["avatar_vision_befor"]["value"]
+            output_block["avatarConstellationBeforTextMapHash"] = block["avatar_constellation_befor"]["value"]
+            output_block["avatarTitleTextMapHash"] = block["avatar_title"]["value"]
+            output_block["avatarDetailTextMapHash"] = block["avatar_detail"]["value"]
+            output_block["avatarAssocType"] = str(block["avatar_assoc_type"]["value"])[11:].upper()
+            output_block["cvChineseTextMapHash"] = block["cv_chinese"]["value"]
+            output_block["cvJapaneseTextMapHash"] = block["cv_japanese"]["value"]
+            output_block["cvEnglishTextMapHash"] = block["cv_english"]["value"]
+            output_block["cvKoreanTextMapHash"] = block["cv_korean"]["value"]
+            output_block["avatarVisionAfterTextMapHash"] = block["avatar_vision_after"]["value"]
+            output_block["avatarConstellationAfterTextMapHash"] = block["avatar_constellation_after"]["value"]
+            output_block["fetterId"] = block["fetter_id"]["value"]
+            output_block["avatarId"] = block["avatar_id"]["value"]
+
+            output.append(output_block)
+
+    with open('./json/FetterInfoExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)        
+
 
 """
 def DumpAvatarSkillExcel():
@@ -275,9 +319,8 @@ def PrettyView():
 
 
 # To-Do
-# FetterInfoExcelConfigData.json
-
 # AvatarPromoteExcelConfigData.json
+# AvatarTalentExcelConfigData.json
 
 # Calculation
 # baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
@@ -293,5 +336,8 @@ def PrettyView():
 
 # DumpAvatarSkill()
 # ParseAvatarSkill()
+
+# DumpFetterInfo()
+# ParseFetterInfo()
 
 # PrettyView()
