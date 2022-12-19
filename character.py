@@ -55,7 +55,9 @@ def character(textmap, charID, files):
     promoteConsts = sorted(promoteConsts, key=lambda x: x['promoteLevel'])
     # 
     for i, prom in enumerate(promoteConsts):
-        ascDict = prom['addProps']
+        ascDict = {}
+        for stat in prom['addProps']:
+            ascDict[stat['propType']] = stat['value'] if 'value' in stat else 0.0
         statmodifier["Ascension"].append(ascDict)
 
         # Materials
@@ -63,7 +65,7 @@ def character(textmap, charID, files):
         for mat in list(filter(None, prom["costItems"])):
             # If mat dict isn't empty
             matData = list(filter(lambda x: x['id'] == mat["id"], files['MaterialExcelConfigData']))[0]
-            dic = {"Name": textmap[str(matData["nameTextMapHash"])], "TextMapID": matData["nameTextMapHash"], "Count": mat["count"]}
+            dic = {"Name": textmap[str(matData["nameTextMapHash"])], "Count": mat["count"]}
             materialsDict["Ascensions"][i]["Mats"].append(dic)
 
     # Corresponding character skill depot

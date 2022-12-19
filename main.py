@@ -2,17 +2,11 @@ from kaitaistruct import KaitaiStream
 from io import BytesIO
 import glob, os, sys, json
 import subprocess
+import character
 
 sys.path.append("./py")
 from textmap import Textmap
 
-import character
-
-# Change CharacterID
-parseCharacterID = 10000078
-
-# Change textMapLanguage
-textMapLanguage = "KR"
 '''
     01/26692920 => 
     02/27251172 => 
@@ -39,7 +33,7 @@ def GetAllTextmaps():
     for file in glob.glob('./bin/TextMap_' + textMapLanguage + '/*.bin'):
 
         cnt += 1
-        print("Parsing in progress [" + str(cnt) + "/" + str(total) + "]")
+        print("Parsing textMap in progress [" + str(cnt) + "/" + str(total) + "]")
 
         with open(file, 'rb') as f:
             stream = KaitaiStream(BytesIO(f.read()))
@@ -350,10 +344,10 @@ def ParseAvatarPromote():
             for i in block["add_props"]["data"]:
                 add_prop = dict()
                 if i["has_field_prop_type"]:
-                    add_prop["propType"] = i["prop_type"]["value"]
+                    add_prop["propType"] = i["prop_type"]["value"][16:].upper()
                 if i["has_field_value"]:
                     add_prop["value"] = i["value"]
-                add_props.append(cost_item)
+                add_props.append(add_prop)
             output_block["addProps"] = add_props
 
             if block["has_field_required_player_level"]:
@@ -485,15 +479,12 @@ def ParseAvatarSkillExcel():
         json.dump(output, json_file, indent=4)        
 """
 
-def PrettyView():
-    global parseCharacterID, textMapLanguage
-    
+def PrettyView(parseCharacterID, textMapLanguage):
+
     with open(os.path.join(os.path.dirname(__file__), f'json/TextMap_{textMapLanguage}.json')) as textmap_json:
         textmap = json.load(textmap_json)
 
         character.characterExtraction(textmap, parseCharacterID)
-
-    # using with charater.py
 
     """ (tsv format)
     Character Name
@@ -534,30 +525,52 @@ def PrettyView():
 
     """
 
-# GetAllTextmaps()
+if __name__ == '__main__':
+    print("YSRes blk parser tool")
+    print("Place MiHoYoBinData .bin files in the ./bin folder")
+    print("")
+    dumpBin = input("Dump .bin to .json? (y/n, default=y) : ")
+    parseBin = input("Parse dumped json to res json? (y/n, default=y) : ")
+    print("")
+    parseCharacterID = int(input("Type the character ID (Example: 10000078) : "))
+    textMapLanguage = input("Type the textMap Language (Example: KR) : ")
 
-# DumpAvatarExcel()
-# ParseAvatarExcel()
+    if dumpBin == "" or dumpBin.lower() == "y" or dumpBin.lower() == "yes":
+        print(f"Dumping TextMap_{textMapLanguage}...")
+        GetAllTextmaps()
+        print("Dumping AvatarExcelConfigData...")
+        DumpAvatarExcel()
+        print("Dumping AvatarSkillDepotExcelConfigData...")
+        DumpAvatarSkillDepot()
+        print("Dumping AvatarSkillExcelConfigData...")
+        DumpAvatarSkill()
+        print("Dumping AvatarTalentExcelConfigData...")
+        DumpAvatarTalent()
+        print("Dumping AvatarPromoteExcelConfigData...")
+        DumpAvatarPromote()
+        print("Dumping FetterInfoExcelConfigData...")
+        DumpFetterInfo()
+        print("Dumping ProudSkillExcelConfigData... (This may take a long time)")
+        DumpProudSkill()
+        print("Dumping MaterialExcelConfigData... (This may take a long time)")
+        DumpMaterialExcel()
 
-# DumpAvatarSkillDepot()
-# ParseAvatarSkillDepot()
+    if parseBin == "" or parseBin.lower() == "y" or parseBin.lower() == "yes":
+        print("Parsing AvatarExcelConfigData...")
+        ParseAvatarExcel()
+        print("Parsing AvatarSkillDepotExcelConfigData...")
+        ParseAvatarSkillDepot()
+        print("Parsing AvatarSkillExcelConfigData...")
+        ParseAvatarSkill()
+        print("Parsing AvatarTalentExcelConfigData...")
+        ParseAvatarTalent()
+        print("Parsing AvatarPromoteExcelConfigData...")
+        ParseAvatarPromote()
+        print("Parsing FetterInfoExcelConfigData...")
+        ParseFetterInfo()
+        print("Parsing ProudSkillExcelConfigData...")
+        ParseProudSkill()
+        print("Parsing MaterialExcelConfigData...")
+        ParseMaterialExcel()
 
-# DumpAvatarSkill()
-# ParseAvatarSkill()
-
-# DumpAvatarTalent()
-# ParseAvatarTalent()
-
-# DumpAvatarPromote()
-# ParseAvatarPromote()
-
-# DumpFetterInfo()
-# ParseFetterInfo()
-
-# DumpProudSkill()
-# ParseProudSkill()
-
-# DumpMaterialExcel()
-# ParseMaterialExcel()
-
-PrettyView()
+    PrettyView(parseCharacterID, textMapLanguage)
