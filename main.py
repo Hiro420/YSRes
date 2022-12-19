@@ -1,4 +1,6 @@
 from kaitaistruct import KaitaiStream
+from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment
 from io import BytesIO
 import glob, os, sys, json
 import subprocess
@@ -451,8 +453,6 @@ def ParseMaterialExcel():
     with open('./json/MaterialExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)        
 
-
-
 """
 def DumpAvatarSkillExcel():
     cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/AvatarSkillExcelConfigData.bin', './ksy/avatar_skill.ksy']
@@ -479,61 +479,43 @@ def ParseAvatarSkillExcel():
         json.dump(output, json_file, indent=4)        
 """
 
-def PrettyView(parseCharacterID, textMapLanguage):
-
+def GenerateRes(parseCharacterID, textMapLanguage):
     with open(os.path.join(os.path.dirname(__file__), f'json/TextMap_{textMapLanguage}.json')) as textmap_json:
         textmap = json.load(textmap_json)
 
-        character.characterExtraction(textmap, parseCharacterID)
+    character.characterExtraction(textmap, parseCharacterID)
 
-    """ (tsv format)
-    Character Name
-    Rarity
-    Weapon
-    baseHP (Lv 90) # baseHP * FetterInfoExcelConfigData[CurrentLevel] + AvatarPromoteExcelConfigData[CurrentPromoteLevel]
-    baseATK (Lv 90)
-    baseDEF (Lv 90)
-    bonusStat
+    with open(os.path.join(os.path.dirname(__file__), f'res/{parseCharacterID}.json')) as dump:
+        res = json.load(dump)
+    
+        wb = Workbook()
+        ws = wb.active
 
-    Promote Cost
-    1 ~~~ x1, ~~~ x3, ~~~x5
-    2 ~~~ x1, ~~~ x3, ~~~x5
-    ...
-    6 ~~~ x1, ~~~ x3, ~~~x5
+        ws.merge_cells('A1:D1')
+        ws['A1'] = res["Name"]
+        ws['A1'].alignment = Alignment(horizontal='center')
 
-    Skill Upgrade Cost
-    2 ~~~ x1, ~~~ x3, ~~~x5
-    3 ~~~ x1, ~~~ x3, ~~~x5
-    ...
-    10 ~~~ x1, ~~~ x3, ~~~x5
+        ws.append(["Rarity",res["Rarity"],"Weapon",res["Weapon"]])
+        ws.append(["BaseHP",res["BaseHP"],"BaseATK",res["BaseATK"]])
+        ws.append(["BaseDEF",res["BaseDEF"],list(res["StatsModifier"]["Ascension"][5].keys())[3],res["StatsModifier"]["Ascension"][5][list(res["StatsModifier"]["Ascension"][5].keys())[3]]])
 
-    Constellations
-    Name Description
+        # ws.cell(5, 5, '5행5열')
 
-    Passives
-    Name Description
-
-    Normal Attack
-    Name
-    Description
-    Modifier Lv.1 Lv.2 ... Lv.10
-    Multiplier a b c ...
-
-    Elemental Skill
-
-    Elemental Burst
-
-    """
+        wb.save(f'./res/{parseCharacterID}.xlsx')
 
 if __name__ == '__main__':
     print("YSRes blk parser tool")
     print("Place MiHoYoBinData .bin files in the ./bin folder")
     print("")
+    
+    # Arg would support later
     dumpBin = input("Dump .bin to .json? (y/n, default=y) : ")
     parseBin = input("Parse dumped json to res json? (y/n, default=y) : ")
     print("")
     parseCharacterID = int(input("Type the character ID (Example: 10000078) : "))
     textMapLanguage = input("Type the textMap Language (Example: KR) : ")
+    print("")
+    generateRes = input("Generate output? (y/n, default=y) : ")
 
     if dumpBin == "" or dumpBin.lower() == "y" or dumpBin.lower() == "yes":
         print(f"Dumping TextMap_{textMapLanguage}...")
@@ -572,5 +554,7 @@ if __name__ == '__main__':
         ParseProudSkill()
         print("Parsing MaterialExcelConfigData...")
         ParseMaterialExcel()
-
-    PrettyView(parseCharacterID, textMapLanguage)
+    
+    if generateRes == "" or generateRes.lower() == "y" or generateRes.lower() == "yes":
+        print("Generating res via GenshinScripts...")
+        GenerateRes(parseCharacterID, textMapLanguage)
