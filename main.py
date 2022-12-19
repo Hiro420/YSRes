@@ -6,11 +6,13 @@ import subprocess
 sys.path.append("./py")
 from textmap import Textmap
 
-# Change CharacterID
-ParseCharacterID = 10000030
+import character
 
-# Change TextMapLanguage
-TextMapLanguage = "KR"
+# Change CharacterID
+parseCharacterID = 10000078
+
+# Change textMapLanguage
+textMapLanguage = "KR"
 '''
     01/26692920 => 
     02/27251172 => 
@@ -28,13 +30,13 @@ TextMapLanguage = "KR"
 '''
 
 def GetAllTextmaps():
-    global TextMapLanguage
+    global textMapLanguage
     output = dict()
 
-    total = len(glob.glob('./bin/TextMap_' + TextMapLanguage + '/*.bin'))
+    total = len(glob.glob('./bin/TextMap_' + textMapLanguage + '/*.bin'))
     cnt = 0
 
-    for file in glob.glob('./bin/TextMap_' + TextMapLanguage + '/*.bin'):
+    for file in glob.glob('./bin/TextMap_' + textMapLanguage + '/*.bin'):
 
         cnt += 1
         print("Parsing in progress [" + str(cnt) + "/" + str(total) + "]")
@@ -46,7 +48,7 @@ def GetAllTextmaps():
             for block in obj.textmap:
                 output[str(block.hash.value)] = block.string.data
 
-    with open("./json/TextMap_" + TextMapLanguage + ".json", "w", encoding='utf-8') as json_file:
+    with open("./json/TextMap_" + textMapLanguage + ".json", "w", encoding='utf-8') as json_file:
         json.dump(output, json_file, indent=4, ensure_ascii=False)
 
 def DumpAvatarExcel():
@@ -427,6 +429,33 @@ def ParseProudSkill():
     with open('./json/ProudSkillExcelConfigData.json', 'w') as json_file:
         json.dump(output, json_file, indent=4)
 
+def DumpMaterialExcel():
+    cmd = ['ksdump', '-f', 'json', './bin/ExcelBinOutput/MaterialExcelConfigData.bin', './ksy/material_excel.ksy']
+
+    with open('./json/Dump_MaterialExcelConfigData.json', 'w') as out:
+        return_code = subprocess.call(cmd, stdout=out)
+        
+def ParseMaterialExcel():
+    ksy = {}
+    output = []
+
+    with open('./json/Dump_MaterialExcelConfigData.json', 'r') as dump:
+        ksy = json.load(dump)
+
+        for block in ksy["block"]:
+
+            output_block = dict()
+
+            # parse contents
+            output_block["id"] = block["id"]["value"]
+            output_block["nameTextMapHash"] = block["name"]["value"]
+            output_block["descTextMapHash"] = block["desc"]["value"]
+            output_block["icon"] = block["icon"]["data"]
+
+            output.append(output_block)
+
+    with open('./json/MaterialExcelConfigData.json', 'w') as json_file:
+        json.dump(output, json_file, indent=4)        
 
 
 
@@ -457,31 +486,14 @@ def ParseAvatarSkillExcel():
 """
 
 def PrettyView():
-    global ParseCharacterID, TextMapLanguage
+    global parseCharacterID, textMapLanguage
+    
+    with open(os.path.join(os.path.dirname(__file__), f'json/TextMap_{textMapLanguage}.json')) as textmap_json:
+        textmap = json.load(textmap_json)
 
-    with open("./json/TextMap_" + TextMapLanguage + ".json", "r", encoding='utf-8') as dump:
-        textMap = json.load(dump)
+        character.characterExtraction(textmap, parseCharacterID)
 
-    with open('./json/AvatarExcelConfigData.json', 'r') as dump:
-        AvatarExcelConfigData = json.load(dump)
-
-    with open('./json/AvatarSkillExcelConfigData.json', 'r') as dump:
-        AvatarSkillExcelConfigData = json.load(dump)
-
-    with open('./json/AvatarSkillDepotExcelConfigData.json', 'r') as dump:
-        AvatarSkillDepotExcelConfigData = json.load(dump)
-
-    with open('./json/AvatarTalentExcelConfigData.json', 'r') as dump:
-        AvatarTalentExcelConfigData = json.load(dump)
-
-    with open('./json/AvatarPromoteExcelConfigData.json', 'r') as dump:
-        AvatarPromoteExcelConfigData = json.load(dump)
-
-    with open('./json/FetterInfoExcelConfigData.json', 'r') as dump:
-        FetterInfoExcelConfigData = json.load(dump)
-
-    with open('./json/ProudSkillExcelConfigData.json', 'r') as dump:
-        ProudSkillExcelConfigData = json.load(dump)
+    # using with charater.py
 
     """ (tsv format)
     Character Name
@@ -544,5 +556,8 @@ def PrettyView():
 
 # DumpProudSkill()
 # ParseProudSkill()
+
+# DumpMaterialExcel()
+# ParseMaterialExcel()
 
 PrettyView()
