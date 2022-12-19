@@ -147,7 +147,8 @@ def character(textmap, charID, files):
         skill = list(filter(lambda x: x['proudSkillGroupId'] == pas['proudSkillGroupId'], files['ProudSkillExcelConfigData']))[0]
         dic = {"Name": textmap[str(skill["nameTextMapHash"])],
             "Desc": textmap[str(skill["descTextMapHash"])],
-            "Unlock": pas['needAvatarPromoteLevel'] if 'needAvatarPromoteLevel' in pas else 0
+            "Unlock": pas['needAvatarPromoteLevel'] if 'needAvatarPromoteLevel' in pas else 0,
+            "ParamList": skill["paramList"] # check the real value
         }
         passList.append(dic)
 
@@ -156,7 +157,9 @@ def character(textmap, charID, files):
     for cons in sorted(skillDepot["talents"]):
         data = list(filter(lambda x: x['talentId'] == cons, files['AvatarTalentExcelConfigData']))[0]
         dic = {"Name": textmap[str(data["nameTextMapHash"])],
-            "Desc": textmap[str(data["descTextMapHash"])]}
+            "Desc": textmap[str(data["descTextMapHash"])],
+            "ParamList": data["paramList"] # check the real value
+        }
         constellations.append(dic)
 
     # Character info
