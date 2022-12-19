@@ -6,7 +6,7 @@ Current target version: 3.4
 
 ## Requirements
 
-- Python 3.9
+- Python 3
 
 - `ksdump` which is in [Kaitai Struct: visualizer](https://github.com/kaitai-io/kaitai_struct_visualizer)
 ```shell
