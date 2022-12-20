@@ -44,13 +44,15 @@ YSRes/    (main folder)
 ├── ksy/
 ├── py/
 ├── res/    (generated files, credit to GenshinScripts)
+├── character.py
 ├── main.py
 └── README.md
 ```
 
 ## Future Goals
 
-- Make pretty character stats output
+- Args support
+- Multi thread in dump process
 - Parse ConfigAvatar to fix embryo issue
 
 ## Credit
