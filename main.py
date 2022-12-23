@@ -468,13 +468,15 @@ def GenerateRes(parseCharacterID, textMapLanguage):
         name_format = wb.add_format({
             'bold': True,
             'align': 'center',
-            'valign': 'vjustify'
+            'valign': 'vjustify',
+            'border': 1
         })
 
         desc_format = wb.add_format({
             'align': 'center',
             'valign': 'vjustify',
-            'text_wrap': True
+            'text_wrap': True,
+            'border': 1
         })
 
         ws.merge_range('A1:H1', res["Name"], name_format)
@@ -585,9 +587,8 @@ def GenerateRes(parseCharacterID, textMapLanguage):
             current_row += 1
 
             for j in list(res["Skills"][i]["Param"].keys()):
-                ws.write(current_row, 0, j)
+                ws.write(current_row, 0, j.upper(), name_format)
 
-                
                 param_form = res["Skills"][i]["Param"][j]["Name"].split("|")[1]
 
                 pattern = "\{param.*?:(.*?)\}"
@@ -636,9 +637,9 @@ if __name__ == '__main__':
     # Arg would support later
 
     dumpTextmap = input("Dump Textmap? (y/n, default=y) : ")
-    textMapLanguage = input("Type the textMap Language (Example: KR) : ")
 
     if dumpTextmap == "" or dumpTextmap.lower() == "y" or dumpTextmap.lower() == "yes":
+        textMapLanguage = input("Type the textMap Language (Example: KR) : ")
         print(f"Dumping TextMap_{textMapLanguage}...")
         GetAllTextmaps()
 
