@@ -9,7 +9,7 @@ sys.path.append("./py")
 from textmap import Textmap
 
 '''
-    01/26692920 => 
+    01/26692920 => CHS
     02/27251172 => 
     03/25181351 => 
     04/25776943 => EN
