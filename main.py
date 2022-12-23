@@ -3,6 +3,7 @@ import xlsxwriter
 from io import BytesIO
 import glob, os, sys, json, re
 import subprocess
+from multiprocessing import Process
 import character
 
 sys.path.append("./py")
@@ -34,7 +35,7 @@ def GetAllTextmaps():
     for file in glob.glob('./bin/TextMap_' + textMapLanguage + '/*.bin'):
 
         cnt += 1
-        print("Parsing textMap in progress [" + str(cnt) + "/" + str(total) + "]")
+        print("Parsing textMap in progress [" + str(cnt) + "/" + str(total) + "]", end='\r')
 
         with open(file, 'rb') as f:
             stream = KaitaiStream(BytesIO(f.read()))
@@ -633,33 +634,48 @@ if __name__ == '__main__':
     print("")
     
     # Arg would support later
-    dumpBin = input("Dump .bin to .json? (y/n, default=y) : ")
-    parseBin = input("Parse dumped json to res json? (y/n, default=y) : ")
-    print("")
-    parseCharacterID = int(input("Type the character ID (Example: 10000078) : "))
-    textMapLanguage = input("Type the textMap Language (Example: KR) : ")
-    print("")
-    generateRes = input("Generate output? (y/n, default=y) : ")
 
-    if dumpBin == "" or dumpBin.lower() == "y" or dumpBin.lower() == "yes":
+    dumpTextmap = input("Dump Textmap? (y/n, default=y) : ")
+    textMapLanguage = input("Type the textMap Language (Example: KR) : ")
+
+    if dumpTextmap == "" or dumpTextmap.lower() == "y" or dumpTextmap.lower() == "yes":
         print(f"Dumping TextMap_{textMapLanguage}...")
         GetAllTextmaps()
-        print("Dumping AvatarExcelConfigData...")
-        DumpAvatarExcel()
-        print("Dumping AvatarSkillDepotExcelConfigData...")
-        DumpAvatarSkillDepot()
-        print("Dumping AvatarSkillExcelConfigData...")
-        DumpAvatarSkill()
-        print("Dumping AvatarTalentExcelConfigData...")
-        DumpAvatarTalent()
-        print("Dumping AvatarPromoteExcelConfigData...")
-        DumpAvatarPromote()
-        print("Dumping FetterInfoExcelConfigData...")
-        DumpFetterInfo()
-        print("Dumping ProudSkillExcelConfigData... (This may take a long time)")
-        DumpProudSkill()
-        print("Dumping MaterialExcelConfigData... (This may take a long time)")
-        DumpMaterialExcel()
+
+    dumpBin = input("Dump .bin to .json? (y/n, default=y) : ")
+    parseBin = input("Parse dumped json to res json? (y/n, default=y) : ")
+    generateRes = input("Generate output? (y/n, default=y) : ")
+    
+    if dumpBin == "" or dumpBin.lower() == "y" or dumpBin.lower() == "yes":
+        print("Dumping .bin files...")
+
+        p0 = Process(target=DumpAvatarExcel)
+        p1 = Process(target=DumpAvatarSkillDepot)
+        p2 = Process(target=DumpAvatarSkill)
+        p3 = Process(target=DumpAvatarTalent)
+        p4 = Process(target=DumpAvatarPromote)
+        p5 = Process(target=DumpFetterInfo)
+        p6 = Process(target=DumpProudSkill)
+        p7 = Process(target=DumpMaterialExcel)
+
+        p0.start()
+        p1.start()
+        p2.start()
+        p3.start()
+        p4.start()
+        p5.start()
+        p6.start()
+        p7.start()
+        
+        p0.join()
+        p1.join()
+        p2.join()
+        p3.join()
+        p4.join()
+        p5.join()
+        print("This may take a long time...")
+        p6.join()
+        p7.join()
 
     if parseBin == "" or parseBin.lower() == "y" or parseBin.lower() == "yes":
         print("Parsing AvatarExcelConfigData...")
@@ -680,5 +696,10 @@ if __name__ == '__main__':
         ParseMaterialExcel()
     
     if generateRes == "" or generateRes.lower() == "y" or generateRes.lower() == "yes":
+
+        parseCharacterID = int(input("Type the character ID (Example: 10000078) : "))
+        textMapLanguage = input("Type the textMap Language (Example: KR) : ")
+        print("")
+
         print("Generating res via GenshinScripts...")
         GenerateRes(parseCharacterID, textMapLanguage)

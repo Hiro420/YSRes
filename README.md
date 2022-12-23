@@ -52,8 +52,8 @@ YSRes/    (main folder)
 ## Future Goals
 
 - Args support
-- Multi thread in dump process
-- Parse ConfigAvatar to fix embryo issue
+- Tower data
+- GenerateElemBall data
 
 ## Credit
 - partypooper for the original [KaitaiDumper](https://github.com/partypooperarchive/KaitaiDumper)
