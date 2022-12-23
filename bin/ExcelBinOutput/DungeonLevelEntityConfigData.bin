@@ -1,0 +1,247 @@
+Ğ?NLevel_Avatar_DefenseDownò÷ÍÊ‰Â’ü?‘N#LevelEntity_ElementAddHurt_ElectricšÎáÔÉÒÉ?’NLevelEntity_ElementAddHurt_Fireò÷Üˆ‘–™?“NLevelEntity_ElementAddHurt_Windêå®š¹é “?”NLevelEntity_ElementAddHurt_IceÚıÇå‰×Šï?•N LevelEntity_ElementAddHurt_WaterÒ¹İ­Ñ…§”?–N LevelEntity_ElementAddHurt_GrassŠÍêÎñŞÀº?—NLevelEntity_ElementAddHurt_Rock¢¡‡ùÙæ˜ò?˜N	,LevelEntity_ElementBeHurtDamageDown_Electric‚åñ–‹¯…?™N
+(LevelEntity_ElementBeHurtDamageDown_Fireª­ñ§áª°ë?šN(LevelEntity_ElementBeHurtDamageDown_Wind‚Ç»ß	ÙúÁè?›N'LevelEntity_ElementBeHurtDamageDown_IceêğŒ™¾Íÿ?œN)LevelEntity_ElementBeHurtDamageDown_Water¢ä²Œ‘À®?N)LevelEntity_ElementBeHurtDamageDown_GrassŠÏÕæùôõ¨?N(LevelEntity_ElementBeHurtDamageDown_RockÒ´šşÉ ãƒ?ŸNLevelEntity_Heal_Downº´ö¬™ÊÇ©? N*LevelEntity_ElementBeHurtDamageUp_Electricšö¤_¡Øğª?¡N&LevelEntity_ElementBeHurtDamageUp_Fire­›…Æ‘Õ›”?¢N&LevelEntity_ElementBeHurtDamageUp_WindŠÖéÑ“‰ª?£N%LevelEntity_ElementBeHurtDamageUp_IceŠ©¸ùµí€?¤N'LevelEntity_ElementBeHurtDamageUp_Waterò­é–¹’«ö?¥N'LevelEntity_ElementBeHurtDamageUp_GrassâÅ±Ø
+ñË‰	?¦N&LevelEntity_ElementBeHurtDamageUp_Rock²•‰ÁÙÌæÙ?§NLevelEntity_MeleeAttackDamageUpÚ¼“ÈÉîÕ?¨NLevelEntity_RangeAttackDamageUpê„·£ÑñõÛ?©NLevelEntity_MaleAddHurtê›‡ñ÷î¼?ªNLevelEntity_FemaleAddHurt²ìÖñÆ×œ?«NLevelEntity_SwordAddHurt²ÎìÇÁÀ”º?¬NLevelEntity_ClaymoreAddHurtºá„öÑ€¶?­NLevelEntity_PoleAddHurtÚŞ Äùúƒ­?®NLevelEntity_CatalystAddHurt¢»òğÑÕ–Ï
+?¯N LevelEntity_BowAddHurtº¹„Õ©Šİ?°N!LevelEntity_AvatarDot_Fireº‰¼	Á «?±N"LevelEntity_AvatarDot_ElectricÚÈ¿ÁæĞ„?²N#LevelEntity_AvatarDot_WaterÂÄ”Ò‘İğ
+?³N$LevelEntity_AvatarDot_Iceê½©Ø±Öäü?´N%LevelEntity_AvatarDot_Windª¶–á­É“?µN&LevelEntity_AvatarDot_RockÊĞÒù	ÙÏÓ?¶N'LevelEntity_AvatarDot_GrassºÑ¥™Ùğ˜§?·N(LevelEntity_RandomThunderšæº¡˜åà
+?¸N)Level_Electric_TestÚû³¨
+áíâÕ?¹N*Level_Explode_Testêûñ°¡”²»?ºN+Level_Superconductor_Test¢£ƒ–‘‘ºÿ?»N,Level_Melt_TestÂÏçğÁª¸
+?¼N-Level_Stream_Testšàì™½Ë?½N.Level_Freeze_TestÒé‹ü	ùêĞ?¾N/Level_Burning_TestºÑù²é›ˆ?¿N0Level_Swril_TestÊÁõÈ±Å¾É?ÀN1LevelEntity_Avatar_CriticalUp¢Æ¢Õ	ÁİÛú?ÁN2!LevelEntity_Avatar_CriticalHurtUpŠĞÂğ‘Ç™
+;ÂN3LevelEntity_Monster_HpUpº¬—ó‰ÜÉ;ÃN4LevelEntity_Monster_HpUpÊ¶óàÙô½ë;ÄN5LevelEntity_Monster_HpUp‚¸Ù‚¾°;ÅN6LevelEntity_Monster_AttackUpš‘ü­€Ä;ÆN7LevelEntity_Monster_AttackUp’‡‚ñÏ¥Ë;ÇN8LevelEntity_Monster_AttackUpª‹ƒöáğôÆ?ÈN9'LevelEntity_Avatar_ChargeEfficiencyDown‚ˆÊÊ‘£º™?ÉN:LevelEntity_GenerateElemBallÒÏ«õ	ÁµŞ ?ÊN;/LevelEntity_Monster_ElementBeHurtDamageDown_Allê¨§”±Ğ¡¢?ËN<LevelEntity_PhysicalAddHurtºÁÆ¯©´ù?ÌN=(Level_Spiral_Abyss_Ball_AttackSpeed_Heal’³…­¹è­?ÍN>(Level_Spiral_Abyss_Ball_MoveSpeed_Defencª¼³5‘ìíë?ÎNèLevel_Avatar_DefenseDownÚ™²•Éöóƒ?ÏNè*LevelEntity_ElementBeHurtDamageUp_ElectricŠñêË	ÑÜÖ²?ĞNèLevelEntity_ElementAddHurt_FireòÂÌ§ùÍû“?ÑNéLevel_Avatar_DefenseDown‚¥¸“©¸©Ø?ÒNé&LevelEntity_ElementBeHurtDamageUp_FireºÙ¨œá»Ø¸?ÓNé#LevelEntity_ElementAddHurt_Electric²¦óñàŸè?ÔNêLevel_Avatar_DefenseDownºì–Ë	¡âÚ°?ÕNê%LevelEntity_ElementBeHurtDamageUp_Ice‚ûéKáú¢ô?ÖNêLevelEntity_ElementAddHurt_Windª”ÿ”
+áĞ»Ó?×NëLevel_Avatar_DefenseDownŠù¢Ã©ß?ØNë*LevelEntity_ElementBeHurtDamageUp_Electric‚â‚À™‰ãÿ?ÙNëLevelEntity_ElementAddHurt_Iceª°ÏÁµÆƒ?ÚNìLevel_Avatar_DefenseDownÊóî®©ÈÚ´?ÛNì&LevelEntity_ElementBeHurtDamageUp_Fire²¡ÏŞÁÂ»Ï?ÜNì LevelEntity_ElementAddHurt_WaterÂö·M¡‰è	?İNíLevel_Avatar_DefenseDownº‚àı±Îáù
+?ŞNí*LevelEntity_ElementBeHurtDamageUp_Electricª¡îÆ
+É˜¨Ø?ßNí LevelEntity_ElementAddHurt_Grass²ùÿ¢á«¹Ë?àNîLevel_Avatar_DefenseDown‚çş£¡Òú&?áNî&LevelEntity_ElementBeHurtDamageUp_FireÊ…òÉ¡èÄÆ?âNîLevelEntity_ElementAddHurt_Rockò«È¡ÑåØ÷?ãNï,LevelEntity_ElementBeHurtDamageDown_Electricê‰İÍ¸¡ß?äNïLevelEntity_ElementAddHurt_FireªÉĞó	™„í	?åNïLevelEntity_MeleeAttackDamageUpò”§“ÙÄöÍ?æNğ(LevelEntity_ElementBeHurtDamageDown_Fire’ Õè	ÙÂêì?çNğ#LevelEntity_ElementAddHurt_ElectricÚ‹’ÄÉÄà´?èNğLevelEntity_MeleeAttackDamageUpŠşæ“
+éÇöİ?éNñ'LevelEntity_ElementBeHurtDamageDown_IceêÍ¶êÙê¥ª?êNñLevelEntity_ElementAddHurt_Fireêƒ€¹Êµ	?ëNñLevelEntity_RangeAttackDamageUp’¬—ˆéÖƒ€
+?ìNòLevelEntity_Heal_Downò¬‘	ÉÖòR?íNòLevelEntity_MeleeAttackDamageUp²íË‘Ş¤ƒ?îNòLevelEntity_BowAddHurtâ¿”ûÑ±ÆŠ?ïNšLevel_Spiral_Abyss_ChargeŠÉš‘Ù‡â‡?ğNš&LevelEntity_TowerBuff_SprintAreaAttackÚÜšùñ‹§™?ñN›Level_Spiral_Abyss_SheildUp’İà•©šãë?òN›+LevelEntity_TowerBuff_HighStaminaAreaAttackò¢¿áîÀÿ?óNœLevel_Spiral_Abyss_AttackSpeed¢´Ù†‰Ùø´?ôNœ(LevelEntity_TowerBuff_AttackUpAreaAttack¢îó›ÑÖ¨ï
+?õNLevel_Spiral_Abyss_CostReduceŠ®ìŒá©‘?öN%LevelEntity_TowerBuff_ExtraAreaAttack‚Å«ùùìÜê?÷NLevel_Spiral_Abyss_AttackSpeedªÄ”Áñİ×?øN!Level_Spiral_Abyss_Ball_MoveSpeedŠ³ÚUÙ§Ëz?ùN&LevelEntity_TowerBuff_SprintAreaAttack¢ªùİ	ÉÀ¯×?úNŸLevel_Spiral_Abyss_CostReduce‚ï¦öùø‹Œ
+?ûNŸLevel_Spiral_Abyss_Ball_Healº¯²°¡äù‚	?üNŸ+LevelEntity_TowerBuff_HighStaminaAreaAttackÂÈ÷ıé´¹Ò?ıN Level_Spiral_Abyss_ChargeòğŒÖÉäŠ“?şN #Level_Spiral_Abyss_Ball_AttackSpeedâÖ¦2Ñ‘œª?ÿN (LevelEntity_TowerBuff_AttackUpAreaAttackâá¶ãù˜Äá
+?€O¡Level_Spiral_Abyss_SheildUp‚Âô€‰ü¼÷?O¡Level_Spiral_Abyss_Ball_Defenceš¡é	š…•?‚O¡%LevelEntity_TowerBuff_ExtraAreaAttackú‰¦©ıøD?ƒO¤3LevelEntity_TowerBuff_ElementReactionAttack_Explodeºš³Ê	ù¶•î?„O¥:LevelEntity_TowerBuff_ElementReactionAttack_Superconductor²ğ°Ñ
+™ë»?…O¦0LevelEntity_TowerBuff_ElementReactionAttack_Melt‚ò¤¹¹ŒÏê?†O§2LevelEntity_TowerBuff_ElementReactionAttack_Stream‚Óí®¹µÍî?‡O¨1LevelEntity_TowerBuff_ElementReactionAttack_Shockší…†Áá‹„?ˆO©1LevelEntity_TowerBuff_ElementReactionHurt_ExplodeÂÌN±êäÈ?‰Oª8LevelEntity_TowerBuff_ElementReactionHurt_SuperconductorªàµŒ‰¶?ŠO«.LevelEntity_TowerBuff_ElementReactionHurt_Meltº³ÿ™ÀÂğ?‹O¬0LevelEntity_TowerBuff_ElementReactionHurt_Stream¢Øîˆ©“§Í
+?ŒO­/LevelEntity_TowerBuff_ElementReactionHurt_ShockÊàùŠÑŠ¦ë?O®0LevelEntity_TowerBuff_ElementReactionAttack_Meltšìˆ‘¼ÀÇ?O®8LevelEntity_TowerBuff_ElementReactionHurt_SuperconductorÚÔ	ñ¦ ¢?O®0LevelEntity_TowerBuff_ElementReactionHurt_StreamúŸíºÙ¢Õß?O¯3LevelEntity_TowerBuff_ElementReactionAttack_Explodeª©ÅÍÉ£ÛÉ?‘O¯.LevelEntity_TowerBuff_ElementReactionHurt_Meltª½•ö‰£?’O¯0LevelEntity_TowerBuff_ElementReactionHurt_StreamÊ®Â¹©Øò?“OÌ3LevelEntity_TowerBuff_ElementReactionAttack_Explode¢ÈÔõ	Ä€‰?”OÍ0LevelEntity_TowerBuff_ElementReactionAttack_MeltŠı¬äÙºÛ¹?•OÎ3LevelEntity_TowerBuff_ElementReactionAttack_Explode²£Êıùº·?–OÎ8LevelEntity_TowerBuff_ElementReactionHurt_Superconductor’åÛ¬ùùê¶?—OÏ0LevelEntity_TowerBuff_ElementReactionAttack_MeltŠ²Ë¹™¯è•?˜OÏ8LevelEntity_TowerBuff_ElementReactionHurt_SuperconductorêÍ§ë	áŸ¨?™OĞ2LevelEntity_TowerBuff_ElementReactionAttack_Streamò©°‘…Û?šOĞ/LevelEntity_TowerBuff_ElementReactionHurt_Shockê°ÔŞÁ°‘
+?›OÑ0LevelEntity_TowerBuff_ElementReactionAttack_Meltºáó½ù¹Ó·?œOÑ8LevelEntity_TowerBuff_ElementReactionHurt_Superconductorºç×Øù¯ÈË?OÒ3LevelEntity_TowerBuff_ElementReactionAttack_Explode’’«Ü	‰²Ó?OÒ8LevelEntity_TowerBuff_ElementReactionHurt_SuperconductorºÏñ³™‘Œú?ŸOÓLevelEntity_ElementAddHurt_FireêõÙ	¡²ïÖ? OÔLevelEntity_PhysicalAddHurtò¨–ß‰‰‰Ã?¡OÕLevelEntity_PhysicalAddHurtâïÚÉˆ¾ä?¢OÖLevelEntity_PhysicalAddHurtÒ¼«ô¹¼şÛ?£O×LevelEntity_PhysicalAddHurtÚÉ·©
+Ñ¼öş?¤OØLevelEntity_PhysicalAddHurtªÎºé‰†‹’?¥OÙLevelEntity_PhysicalAddHurtÒ¨Ã÷“åù?¦OÚLevel_Electric_TestÚÚ­à
+‰”²ä?§OÛ3LevelEntity_TowerBuff_ElementReactionAttack_ExplodeºãğÓÅí¨?¨OÜ:LevelEntity_TowerBuff_ElementReactionAttack_Superconductor²½¨Ï‚Ï?©OİLevel_Electric_Test’óï“‰™õÚ?ªOŞ3LevelEntity_TowerBuff_ElementReactionAttack_ExplodeÚ©š¥ÁâäŞ?«OŞ.LevelEntity_TowerBuff_ElementReactionHurt_Meltª–÷ô¡Ì¡Î?¬OŞ0LevelEntity_TowerBuff_ElementReactionHurt_Streamš€¯Ê¹“½?­Oß:LevelEntity_TowerBuff_ElementReactionAttack_Superconductor‚Úóƒ¹¾·Ì?®Oß.LevelEntity_TowerBuff_ElementReactionHurt_MeltÊõ÷ò™»ù ?¯Oß0LevelEntity_TowerBuff_ElementReactionHurt_Stream’´åÃé§÷?°Oà#LevelEntity_ElementAddHurt_Electricªë†˜ùêÀù?±OáLevel_Freeze_Testò„øøÉœ¦ø?²Oá:LevelEntity_TowerBuff_ElementReactionAttack_Superconductorª“Ìó™¸²»?³Oâ0LevelEntity_TowerBuff_ElementReactionAttack_MeltŠÓ¿ÇÉçæí?´Oâ1LevelEntity_TowerBuff_ElementReactionHurt_ExplodeÂ†…Ï	éßÁû?µOã:LevelEntity_TowerBuff_ElementReactionAttack_Superconductorºº®õ£˜?¶Oã1LevelEntity_TowerBuff_ElementReactionHurt_Explodeòè¯É¹Ã‡Ÿ?·Oä0LevelEntity_TowerBuff_ElementReactionAttack_MeltºõñËÁŠ¬ç?¸Oä1LevelEntity_TowerBuff_ElementReactionHurt_Explode’×Î
+áØı?¹OåLevel_Melt_TestÒ¿­´‘­£Ó	?ºOæLevelEntity_ElementAddHurt_RockªÄó‘	é’—?»OçLevelEntity_ElementAddHurt_Rock‚ğ‚µ‰µİ	?¼OèLevelEntity_ElementAddHurt_RockºüÆ‘	‰ô­ó?½OéLevelEntity_PhysicalAddHurtšæÍlÑ‘–ğ
+?¾OéLevelEntity_Avatar_CriticalUpÚœ¡·Ñ³Šˆ;¿OêLevelEntity_Monster_HpUpºÿğ­éß®İ;ÀOëLevelEntity_Monster_HpUpÚÆùÆ‰­Øº;ÁOëLevelEntity_Monster_AttackUp¢÷å­©ÆŠÙ;ÂOìLevelEntity_Monster_HpUpŠá—á	«­°;ÃOíLevelEntity_Monster_AttackUpâÆ‹Ù±éÀ•;ÄOîLevelEntity_Monster_AttackUpÊÊÑ†õÀ;ÅOïLevelEntity_Monster_HpUp‚ğıß·§;ÆOïLevelEntity_Monster_AttackUpú×·£ù”Îí;ÇOğLevelEntity_Monster_HpUp’ğÆ«‰äÕ¶	;ÈOñLevelEntity_Monster_HpUpâ°å‹áâÇ;ÉOñLevelEntity_Monster_AttackUpº¿ŒÁ
+Áºş£;ÊOòLevelEntity_Monster_HpUpâêê¸ù¹ëÏ	;ËOóLevelEntity_Monster_HpUpêÑ»Ïé¢‰;ÌOóLevelEntity_Monster_AttackUpòºØŞ©ôÊ›?ÍOşLevelEntity_ElementAddHurt_Fireê¦¦ÉÜ¦"?ÎOşLevel_Explode_Testº§Ö‰éí®;ÏOşLevelEntity_Monster_HpUp_Lv1ªÛ±'‰•¢—?ĞOÿLevelEntity_ElementAddHurt_IceòßÓ’ÙÊD?ÑOÿLevel_Freeze_Test¢Á‰ìÜ®İ;ÒOÿLevelEntity_Monster_HpUp_Lv2¢ÎÜ€ù„ö)?ÓO€	#LevelEntity_ElementAddHurt_Electric²ŒÓŸù÷Á?ÔO€	Level_Electric_Testš—ŠµéÖš;ÕO€	LevelEntity_Monster_HpUp_Lv1º›ß»Ù¬‚”?ÖO	LevelEntity_ElementAddHurt_Fireº”ëœ¹ãî?×O	LevelEntity_ElementAddHurt_IceúÁ±¿ùéÚ•?ØO	Level_Melt_TestÊúÍş±è†Î
+;ÙO	LevelEntity_Monster_HpUp_Lv1ê¸¼Ì
+á£Ùİ?ÚO‚	LevelEntity_ElementAddHurt_FireÊîƒ£ù»ßœ?ÛO‚	#LevelEntity_ElementAddHurt_Electricâ’ºÖ‰³Âì?ÜO‚	Level_Explode_TestÒƒòæ¹Ï¡ñ;İO‚	LevelEntity_Monster_HpUp_Lv2ºõÃ©¢öå?ŞOôLevel_Swril_TestÂíÌÇ	ñÇ–Ó?ßOôLevelEntity_ElementAddHurt_Wind¢“é·ÑÍ›â;àOôLevelEntity_Monster_HpUp_Lv2ÂãËÿùû‡¢?áOõ#LevelEntity_ElementAddHurt_Electric‚âİùÔÂÈ?âOõLevel_Electric_TestÊ£€’é®øË;ãOõLevelEntity_Monster_HpUp_Lv3ú§¤Şõ½?äOöLevelEntity_ElementAddHurt_RockÊ’¥…Ù¸¦?åOöLevel_Freeze_Test²¿ú‘3?æOöLevelEntity_ClaymoreAddHurt‚ı·ŠñªÜØ	;çOöLevelEntity_Monster_HpUp_Lv5ú¦Ú¶ùÇìê?èO÷ LevelEntity_ElementAddHurt_Water‚°±§é±¢Ï?éO÷LevelEntity_ElementAddHurt_Fireª¦Ÿô
+±ÿº¶?êO÷Level_Stream_TestÚİÆ±Ñ¢„;ëO÷LevelEntity_Monster_HpUp_Lv2’óà“Éò¨ğ?ìOø#LevelEntity_ElementAddHurt_ElectricÚÿŒ“á æû?íOøLevelEntity_ElementAddHurt_IceÒ§•Â¹áÏ¡?îOøLevel_Superconductor_TestªŸŠÅ±è©	;ïOøLevelEntity_Monster_HpUp_Lv3Š£ôåéøò ?ğOƒ	!LevelEntity_Avatar_CriticalHurtUpªÙ¿Œ±Ô“Ñ;ñOƒ	LevelEntity_Monster_HpUp_Lv4ºïğ±á£¦÷?òO„	LevelEntity_PhysicalAddHurtÒáûŞéÆù·;óO„	LevelEntity_Monster_HpUp_Lv3ºã„±Ñ‡Ü?ôO…	Level_Spiral_Abyss_Charge_EmptyºÁâá¡¨¿Ç;õO…	LevelEntity_Monster_HpUp_Lv3êÆÍÅ‰ıš¦?öO…	LevelEntity_TowerBuff_HealUp’ÍúÙğ©	?÷O†	Level_Spiral_Abyss_Charge_Emptyª‘µ„‘Š”„;øO†	LevelEntity_Monster_HpUp_Lv5úŠôšô÷²?ùO†	7LevelEntity_TowerBuff_TowerBuff_CriticalDropElementBallªâõÁÁÄÖñ?úO‡	Level_Spiral_Abyss_Charge_EmptyŠõ¡’Á÷«°?ûO‡	LevelEntity_ElementAddHurt_Fireªˆ ºÙª¯ü;üO‡	LevelEntity_Monster_HpUp_Lv4šçÛ‘¹³´è?ıOˆ	Level_Spiral_Abyss_Charge_Empty²éêá	Á™™µ?şOˆ	Level_Stream_Testº„Ä	Ñ¢¥¬	;ÿOˆ	LevelEntity_Monster_HpUp_Lv5ª¥şñ©ä®À
+?€P‰	$LevelEntity_TowerBuff_AtkDefUpHighHP²ø¡ö
+±îñá;P‰	LevelEntity_Monster_HpUp_Lv3ò†é¹ë§Ë?‚PŠ	LevelEntity_PhysicalAddHurtš¸ã“ù§¾Ô?ƒPŠ	/LevelEntity_Monster_ElementBeHurtDamageDown_All‚şš£Ùñæ×
+;„PŠ	LevelEntity_Monster_HpUp_Lv4‚ßù—¡Ù¥İ?…P‹	7LevelEntity_TowerBuff_TowerBuff_CriticalDropElementBallêáÑ¸Á×¿;†P‹	LevelEntity_Monster_HpUp_Lv5Š´¨“‘éüÙ?‡PŒ	&LevelEntity_TowerBuff_ChargeEfficiencyªÜìœÑÔşÊ;ˆPŒ	LevelEntity_Monster_HpUp_Lv5Ê¿ş¿¡Î‰õ?‰P	*LevelEntity_TowerBuff_UltimateSkillAllBuffŠè—	©£‘˜;ŠP	LevelEntity_Monster_HpUp_Lv5ÒéÀ/¡ÿ…©?‹P	#LevelEntity_TowerBuff_AtkDefUpLowHPšî½í¡Î›­;ŒP	LevelEntity_Monster_HpUp_Lv5Ú÷ÖÑ‘¬Ø?P	&LevelEntity_TowerBuff_ChargeEfficiencyÂÂá²Ãš¨?P°	LevelEntity_ElementAddHurt_Fire¢¶ıˆñù¼ı?P°	Level_Explode_TestÚî×ÖáÂ±Û?P±	LevelEntity_ElementAddHurt_IceÒ¢Ÿë‘ú˜³?‘P±	Level_Freeze_Testª•à÷é·Ï?’P²	Level_Swril_TestÚÒ±Ğ¡ú¼ö?“P²	LevelEntity_ElementAddHurt_WindÊ Å$™‹æ;”P²	LevelEntity_Monster_HpUp_Lv2ê´Àºè‘»?•P³	#LevelEntity_ElementAddHurt_ElectricÊİ“±±úóÇ?–P³	Level_Electric_TestúÒ¢ş‰ºø®;—P³	LevelEntity_Monster_HpUp_Lv2Ú¡öÄ±¼ÉÓ
+?˜P´	$LevelEntity_TowerBuff_AtkDefUpHighHPÚıô¤ÁóÊ;™P´	LevelEntity_Monster_HpUp_Lv2Â¢¿Ùğòà?šPµ	&LevelEntity_TowerBuff_ChargeEfficiency²½‚÷‘ÚáÁ?›Pµ	*LevelEntity_TowerBuff_UltimateSkillAllBuffš©Í›™´õ°;œPµ	LevelEntity_Monster_HpUp_Lv2ªëÂ’Ñ™»?P¶	7LevelEntity_TowerBuff_TowerBuff_CriticalDropElementBallêòóïÁ¶¿¦?P¶	!LevelEntity_Avatar_CriticalHurtUpÒ€âÄ±‘÷±;ŸP¶	LevelEntity_Monster_HpUp_Lv3úÓ‡pÉê±? P·	#LevelEntity_TowerBuff_AtkDefUpLowHP¢ÿÌÂñİ¤·;¡P·	LevelEntity_Monster_HpUp_Lv5’ÓÓ«
+±?¢P¸	#LevelEntity_TowerBuff_AtkSpeedLowHPÂÊ—°áÌ¶‹?£P¹	$LevelEntity_TowerBuff_AtkSpeedHighHPòÌ¢ÆÑõßÃ	?¤Pº	$LevelEntity_TowerBuff_MoveSpeedLowHPŠÂØ«¹ùÛê?¥P»	%LevelEntity_TowerBuff_MoveSpeedHighHPú ’©í”Ù?¦P¼	%LevelEntity_TowerBuff_CriticalUpLowHP¢•ò©¹ˆë8?§P½	&LevelEntity_TowerBuff_CriticalUpHighHPÊñ€±ßÄ©?¨P¾	&LevelEntity_TowerBuff_AtkDefUpAfterULTÚŠÛ÷	±Ä€Ğ?©P¿	&LevelEntity_TowerBuff_AtkDefUpAfterULTÒ¶õ±Åå£	;ªP¿	LevelEntity_Monster_HpUp_Lv2â÷Ì”‰‘Çô	?«PÀ	%LevelEntity_TowerBuff_MoveSpeedHighHPò¶N©Ÿš>?¬PÀ	#LevelEntity_TowerBuff_AtkSpeedLowHPú ÛŠùÊ…ô?­PÀ	%LevelEntity_TowerBuff_CriticalUpLowHPšääö¡òË	;®PÀ	LevelEntity_Monster_HpUp_Lv3²ŸìşÑØ…‚?¯PÁ	$LevelEntity_TowerBuff_AtkDefUpHighHPÒáÓÄñÜÉ»?°PÁ	$LevelEntity_TowerBuff_AtkSpeedHighHP‚‰İÉ©áøâ?±PÁ	%LevelEntity_TowerBuff_MoveSpeedHighHPÒ¢µ‰ù¤‡ƒ?²PÁ	&LevelEntity_TowerBuff_CriticalUpHighHPŠ‚‰ä¹Œ°Ï;³PÁ	LevelEntity_Monster_HpUp_Lv2â’¦œ‰µ×§?´PÂ	#LevelEntity_TowerBuff_AtkDefUpLowHPúÌœ˜ÙÀùã?µPÂ	#LevelEntity_TowerBuff_AtkSpeedLowHPÚóÅõéû¡š?¶PÂ	$LevelEntity_TowerBuff_MoveSpeedLowHP¢Üù¹—Ï€?·PÂ	%LevelEntity_TowerBuff_CriticalUpLowHPú‡Î¤¡•ÒÛ;¸PÂ	LevelEntity_Monster_HpUp_Lv5’“ñä™Ö¾€?¹PÃ	LevelEntity_ElementAddHurt_Fireò¯Í¬ÉÙ‚¼?ºPÃ	#LevelEntity_ElementAddHurt_ElectricúïæÜñÂé˜?»PÃ	Level_Explode_TestÚÍ†–ŠÿÜ;¼PÃ	LevelEntity_Monster_HpUp_Lv3’“šì¹Î­˜?½PÄ	Level_Spiral_Abyss_Charge_EmptyÊÊõ¯±èí?¾PÄ	LevelEntity_TowerBuff_HealUp’ÿš´™éÊ…	;¿PÄ	LevelEntity_Monster_HpUp_Lv3ÊÎ°ì
+‘íğÌ?ÀPÅ	#LevelEntity_ElementAddHurt_Electric‚ÊÿÆ©¤Á½?ÁPÅ	LevelEntity_ElementAddHurt_IceòÁˆ•ùôëæ?ÂPÅ	Level_Superconductor_Test¢‚·™¤µu;ÃPÅ	LevelEntity_Monster_HpUp_Lv3òôŸ‘èºº?ÄPÆ	Level_Spiral_Abyss_Charge_Empty¢õşÆù¾Ì½?ÅPÆ	LevelEntity_ElementAddHurt_FireÚ¸ê¥‰öÌˆ;ÆPÆ	LevelEntity_Monster_HpUp_Lv4²Ùıåáêàô?ÇP”
+Level_Spiral_Abyss_Charge_Emptyú¡³Šé¹š?ÈP•
+Level_Spiral_Abyss_Charge_EmptyÂûÇÍé‰¼Î?ÉP–
+Level_Spiral_Abyss_Charge_EmptyšŸõ†áø„„?ÊP—
+Level_Spiral_Abyss_Charge_EmptyÊÁºš
+¡Ğ²L?ËP˜
+Level_Spiral_Abyss_Charge_EmptyúË‹ä±â?ÌP™
+Level_Spiral_Abyss_Charge_EmptyŠš¥¹È¾è?ÍPš
+$LevelEntity_TowerBuff_AtkDefUpHighHP’Î¯¦
+™°è„?ÎPš
+$LevelEntity_TowerBuff_AtkSpeedHighHP¢–Ÿ’Ùˆ€Ù?ÏPš
+%LevelEntity_TowerBuff_MoveSpeedHighHPÚ®€¾±Éş?ĞPš
+&LevelEntity_TowerBuff_CriticalUpHighHPú´…¡ñ“çó;ÑPš
+LevelEntity_Monster_HpUp_Lv2Ê„ƒ„¹ÕúÍ?ÒP›
+&LevelEntity_TowerBuff_AtkDefUpAfterULT’Û¹»öÌ;ÓP›
+LevelEntity_Monster_HpUp_Lv2úš™Í“?ÔPœ
+7LevelEntity_TowerBuff_TowerBuff_CriticalDropElementBallšå­¡éø»’?ÕPœ
+!LevelEntity_Avatar_CriticalHurtUpÚë‰·©ãúõ;ÖPœ
+LevelEntity_Monster_HpUp_Lv2Ú¶›Ñ™Ş?×P
+#LevelEntity_TowerBuff_AtkDefUpLowHPú¤ÅíéÅØ¼?ØP
+#LevelEntity_TowerBuff_AtkSpeedLowHP’Û¨©ùÕ…ë?ÙP
+$LevelEntity_TowerBuff_MoveSpeedLowHPú¹üÍ¹óª‚?ÚP
+%LevelEntity_TowerBuff_CriticalUpLowHPºïùúá¸ë;ÛP
+LevelEntity_Monster_HpUp_Lv3Ò‰´ã	ñÈ¿œ?ÜP
+&LevelEntity_TowerBuff_ShieldEnhanceAtkú¥›‰èšÿ?İPŸ
+(LevelEntity_TowerBuff_GainShieldDoDamageÊŠ‰±ùô™?ŞP 
+.LevelEntity_TowerBuff_ShieldOnBeingHitDoDamageÊêê˜©§ß—?ßP¡
+Level_Spiral_Abyss_Charge_EmptyÊäŠ©µàÜ	?àP¡
+Level_Spiral_Abyss_Charge_Empty²ğ‹È±¬À¤;áP¡
+LevelEntity_Monster_HpUp_Lv3šµÓ£¹½õ®?âP¢
+Level_Spiral_Abyss_Charge_Empty¢şœµ¡›È£?ãP¢
+Level_Spiral_Abyss_Charge_EmptyÂĞï‰	ù‰­s;äP¢
+LevelEntity_Monster_HpUp_Lv3¢±‰õÁ¹?åP£
+LevelEntity_ElementAddHurt_RockÊÂÖß¹Ü·;æP£
+LevelEntity_Monster_HpUp_Lv4ºÓßÈáˆŠÆ?çP¤
+Level_Spiral_Abyss_Charge_Emptyªí”©©Ï¾
+?èP¤
+LevelEntity_ElementAddHurt_Iceš•Ì`¡¨½;éP¤
+LevelEntity_Monster_HpUp_Lv3¢†££éêóŠ?êP¥
+,LevelEntity_TowerBuff_GainShieldDoDamage_Iceš™Õ¯ùÜŠ™?ëP¥
+,LevelEntity_TowerBuff_GainShieldReduceCD_IceÂÅÄ³¡äâÛ
+?ìP¦
+.LevelEntity_TowerBuff_GainShieldAtkSpeedUp_IceŠƒÙ‹±ù‹Ú?íP§
+.LevelEntity_TowerBuff_GainShieldCriticalUp_Iceºû®èáù¾Š	?îP¨
+<LevelEntity_EffigyChallenge_ElementBeHurtDamageDown_ElectricÊ–Ò
+±µ†ª?ïP¨
+(LevelEntity_EffigyChallenge_CriticalDown¢‰ñáĞÛß?ğP¨
+2LevelEntity_EffigyChallenge_BeHurtDamageUpAfterULTºèóàñËä¢?ñP¨
+)LevelEntity_EffigyChallenge_AtkDownHighHPšá‰±ïˆĞ?òP¨
+1LevelEntity_EffigyChallenge_DashStamina_IncrementºÌº¡¬°?óP¨
+,LevelEntity_EffigyChallenge_SkillCDIncrementòÇ¯™±åÈˆ?ôP¨
++LevelEntity_EffigyChallenge_ShieldCostMinus¢¹®ûÑÖßÚ
+?õP¨
+$LevelEntity_EffigyChallenge_AtkSpeedÂ€º±ıäÓ	?öP©
+8LevelEntity_EffigyChallenge_ElementBeHurtDamageDown_FireêÅÎ
+™‘’à?÷P©
+,LevelEntity_EffigyChallenge_CriticalHurtDownòÖÒí
+±ùÿ«?øP©
+(LevelEntity_EffigyChallenge_AtkDownLowHPÂö¶ô¡£¨ğ?ùP©
+$LevelEntity_EffigyChallenge_AttackUpÂö§	Ùà§’?úP©
+%LevelEntity_EffigyChallenge_MoveSpeedÂë×ÿ±˜Õî?ûPª
+7LevelEntity_EffigyChallenge_ElementBeHurtDamageDown_IcešÜ£ÑÊŒ–	?üPª
+*LevelEntity_EffigyChallenge_AtkDefUpHighHPÂ¬ãÈéõ?ıPª
+/LevelEntity_EffigyChallenge_ShieldCostMinusDown‚“Âé‰™ÀÅ?şP«
+(LevelEntity_EffigyChallenge_PhysicalDownÚë¥øÉ–óş?ÿP«
+)LevelEntity_EffigyChallenge_AtkDefUpLowHP¢à×ş
+éĞê?€Q«
+)LevelEntity_EffigyChallenge_MoveSpeedDownÒÜÁ¿Ñ´ùÁ?Q«
+0LevelEntity_EffigyChallenge_SprintBeHurtDamageUpúª—Ú
+é³à…?‚Q¬
+<LevelEntity_EffigyChallenge_ElementBeHurtDamageDown_ElectricÂ° ×
+¹·ªê	?ƒQ­
+(LevelEntity_EffigyChallenge_CriticalDownÊé—Î©š–?„Q®
+2LevelEntity_EffigyChallenge_BeHurtDamageUpAfterULTú˜ íú?…Q¯
+)LevelEntity_EffigyChallenge_AtkDownHighHPêÔÒÂÑÉ­?†Q°
+1LevelEntity_EffigyChallenge_DashStamina_IncrementÒØŒªùÕ·‹?‡Q±
+,LevelEntity_EffigyChallenge_SkillCDIncrementúµ¡éÉˆâª?ˆQ²
+0LevelEntity_EffigyChallenge_ShieldCostMinus_Ver2Â»¾Ñ¯œã?‰Q³
+$LevelEntity_EffigyChallenge_AtkSpeedÂå¤‰‰Ş‡Õ?ŠQ´
+8LevelEntity_EffigyChallenge_ElementBeHurtDamageDown_FireºÀÛÙ¤Š??‹Qµ
+,LevelEntity_EffigyChallenge_CriticalHurtDownò÷¿‚¹÷Ùú?ŒQ¶
+(LevelEntity_EffigyChallenge_AtkDownLowHPÂ²Çû
+¡Ò­“?Q·
+$LevelEntity_EffigyChallenge_AttackUpªíÁãÁˆºÛ?Q¸
+%LevelEntity_EffigyChallenge_MoveSpeed¢¼•’™±¹š?Q¹
+7LevelEntity_EffigyChallenge_ElementBeHurtDamageDown_IcešÁŒÊá€”?Qº
+*LevelEntity_EffigyChallenge_AtkDefUpHighHPÒÛ£Å‰âïœ?‘Q»
+/LevelEntity_EffigyChallenge_ShieldCostMinusDown²¶èÄé®Ç¢?’Q¼
+(LevelEntity_EffigyChallenge_PhysicalDown²ÎÍò¹·îò?“Q½
+)LevelEntity_EffigyChallenge_AtkDefUpLowHPúœöWÑøİÉ?”Q¾
+)LevelEntity_EffigyChallenge_MoveSpeedDownêÖ†·±À£»?•Q¿
+0LevelEntity_EffigyChallenge_SprintBeHurtDamageUpê²½©ñÎĞV?–QÀ
+Level_Spiral_Abyss_Charge_EmptyÂÍï€©İÇ™	?—QÀ
+Level_Spiral_Abyss_Charge_EmptyÂî°ÈÉÔï£?˜QÀ
+Level_Spiral_Abyss_Charge_EmptyÚ‘	ÁŞ¨?™QÁ
+LevelEntity_Heal_Down_Ver2òì¸ê‘‚ˆß?šQÂ
+'LevelEntity_Avatar_ChargeEfficiencyDown’ÿÚ³ÑŒäŠ?›QÃ
+;LevelEntity_EffigyChallenge_BeHurtDamageUpAfterChangeAvatar¢ï§¼‘È²	?œQÄ
++LevelEntity_EffigyChallenge_NoShieldAtkDown²ÛƒÉ¥±ë?QÅ
++LevelEntity_TowerBuff_ChargeEfficiency_Ver2’çøµ™ü•‘?QÆ
+*LevelEntity_TowerBuff_CriticalUpLowHP_Ver2ú÷…©×·‹?ŸQÇ
++LevelEntity_TowerBuff_CriticalUpHighHP_Ver2òÄ¯˜¹”­¡; QÈ
+LevelEntity_Monster_HpUp_Lv2òÄ’õ‰Á™û;¡QÉ
+4LevelEntity_EffigyChallenge_SpecialAvatarDamageUp_01Ê•ë¾©ÁŠõ;¢QÊ
+4LevelEntity_EffigyChallenge_SpecialAvatarDamageUp_02ê­–¾‰§—¥;£QË
+4LevelEntity_EffigyChallenge_SpecialAvatarDamageUp_03’²¤ŞÙòİ;¤QÌ
+4LevelEntity_EffigyChallenge_SpecialAvatarDamageUp_04ÊÄöô±ù™?¥QÍ
+1LevelEntity_TowerBuff_AtkAtkSpeedUpLowHP_Ver_1_13º™œ¡¶Æ¡?¦QÍ
+.LevelEntity_TowerBuff_CriticalUpLowHP_Ver_1_13âÂÂÖ‘óÖ¶?§QÎ
+.LevelEntity_TowerBuff_AreaAttackLowHP_Ver_1_13º“ÖÕ±úˆ…?¨QÏ
+6LevelEntity_TowerBuff_AttackUpAreaDamageLowHP_Ver_1_13ú½À±ò€ô?©QĞ
+)LevelEntity_EffigyChallenge_MonsterHp_025úë„éÁÈá?ªQÑ
+)LevelEntity_EffigyChallenge_MonsterHp_050âÍ¸õ©Ø²¬?«QÒ
+)LevelEntity_EffigyChallenge_MonsterHp_100êÀ¡ÔÙ¬Œ‡?¬QÓ
+Level_Spiral_Abyss_Charge_Empty’ÕË‹‘óÜ;­QÓ
+LevelEntity_Monster_HpUp_Lv4êüë¹¥½È?®QÔ
+$LevelEntity_EffigyChallenge_AtkSpeedâ˜ù¨¡”¥?¯QÔ
+(LevelEntity_TowerBuff_AttackUpAreaAttack¢ÓÎæ÷¢?°QÔ
+%LevelEntity_TowerBuff_ExtraAreaAttackÊ‡·üÑóì³;±QÕ
+.LevelEntity_Activity_TowerDefence_AvatarDebuffòãÉˆùäŒ¼?²QÓ
+Level_Spiral_Abyss_Charge_Emptyºè°ù‰²ò(?³QÖ
+2LevelEntity_TowerBuff_AreaNoEnemyAttackUp_Ver_1_14‚ƒò‚Ù–Şô?´Q×
+:LevelEntity_TowerBuff_EnemyDefDownOnFallingAttack_Ver_1_14¢“Ñàñ²§º?µQØ
+=LevelEntity_TowerBuff_DropElementBallOnFallingAttack_Ver_1_14ŠÙ„éƒø?¶QÙ
+Level_MaoCheng_TestÊ‰…Ë‰ßßº?·QÙ
+Level_Spiral_Abyss_Charge_Empty²‘œİÑµğì?¸QÙ
+Level_Spiral_Abyss_Charge_EmptyÂ¼½Å‘½Ö?¹QÙ
+Level_Spiral_Abyss_Charge_Empty‚•¤¥±º™?ºQÚ
+Level_Electric_TestÒó˜ğ¡µÛ?»QÚ
+1LevelEntity_TowerBuff_ElementReactionAttack_ShockºƒşÙéÅ·?¼QÚ
+(LevelEntity_TowerBuff_GainShieldDoDamageÊöíÚ‰¯ğÔ?½QÚ
+.LevelEntity_TowerBuff_ShieldOnBeingHitDoDamageŠœøÙÌ§[?¾QÛ
+&ActivityAbility_SuperTrial_FallingBuffŠ€¼Ÿ¡‹ê?¿QÛ
+,ActivityAbility_SuperTrial_FallingAreaAttackÚè¢‘§©I?ÀQÜ
+)ActivityAbility_SuperTrial_ShieldDamageUpú˜­¢‰ûÛ†?ÁQÜ
+/ActivityAbility_SuperTrial_GainShieldAreaAttackÂ¦˜¦‹±ã?ÂQİ
+*ActivityAbility_SuperTrial_HealingDamageUpÚŸàÖéÄÔæ?ÃQİ
+2ActivityAbility_SuperTrial_HealingReviveElemEnergyú‚æ‘”Œµ?ÄQŞ
++ActivityAbility_SuperTrial_ElementMasteryUpÚ†ºÓ‰©ˆÉ?ÅQŞ
+0ActivityAbility_SuperTrial_ElementReactionAttackÊÿ†Ùü“®	?ÆQß
+(ActivityAbility_SuperTrial_MeleeDamageUpÚÄ÷²À¤	?ÇQß
+*ActivityAbility_SuperTrial_MeleeAreaAttackÚÍ½˜Á²·â?ÈQà
+/ActivityAbility_SuperTrial_RangeNoEnemyAttackUpºªõ¯éÃ¥?ÉQà
+7ActivityAbility_SuperTrial_RangeNoEnemyStaminaReduction²Û Ş‰ ä³?ÊQá
+4LevelEntity_Avatar_ShieldOnBeingHitDoDamage_Ver_1_15ªÒ­”	Ñü„½?ËQâ
+4LevelEntity_Avatar_ShieldOnBeingHitDoDamage_Ver_1_15ª²Ôè©ÖÍ±;ÌQâ
+LevelEntity_HpUp_20p²å…û¹Ş¡Š?ÍQã
+4LevelEntity_Avatar_ShieldOnBeingHitDoDamage_Ver_1_15Ú¿œÛé›ç‚;ÎQã
+LevelEntity_Monster_HpUp_Lv2¢ÂÙÄÙèÙ?ÏQä
+Level_Spiral_Abyss_Charge_Emptyòå †™„›¥?ĞQä
+LevelEntity_PhysicalAddHurt’é’ß¡ı˜›;ÑQä
+LevelEntity_Monster_HpUp_Lv3ªü™ùíê?ÒQå
+Level_Spiral_Abyss_Charge_EmptyÂÛ£é¡İşì;ÓQå
+LevelEntity_Monster_HpUp_Lv4²êà•¹“Ù?ÔQæ
+.LevelEntity_TowerBuff_PhysicalHurtUpAreaAttackšØ†¨¹ıßÂ?ÕQç
+,LevelEntity_TowerBuff_ShieldBeingHitDoAttackªØÅş	Ùö“¼?ÖQè
+*LevelEntity_TowerBuff_CriticalUpAreaAttackòïŸ¥É—¨	?×Qù
+LevelEntity_EnergyDisk_Lv1_HpUpŠ÷±ù¥á«?ØQú
+LevelEntity_EnergyDisk_Lv2_HpUp¢¹ÆÀÑæÒ±?ÙQû
+LevelEntity_EnergyDisk_Lv3_HpUpúŒ‰ğéã†¡?ÚQƒ+LevelEntity_EnergyDisk_Lv1_ElecSubHurtDeltaÚáóîÑºÓÎ	?ÛQ„+LevelEntity_EnergyDisk_Lv1_FireSubHurtDeltaÊ½°áé»ÿà?ÜQ…+LevelEntity_EnergyDisk_Lv2_RockSubHurtDeltaº…šƒÁîĞ±?İQ†0LevelEntity_EnergyDisk_Lv3_Actor_IceSubHurtDeltaÒšêÙñÆõ?ŞQ‡2LevelEntity_EnergyDisk_Lv3_Actor_WaterSubHurtDeltaú—¡¡íš“
+?ßQˆ+LevelEntity_EnergyDisk_Lv2_WindSubHurtDeltaÊÛ¥£É¯Í	?àQ‰*LevelEntity_EnergyDisk_Lv4_PhysicalSubHurtŠç¤¹Ê×?áQŠ LevelEntity_EnergyDisk_Lv1_AtkUp¢şá³éæÉ?âQ.LevelEntity_EnergyDisk_Lv3_ShieldCostMinusDownºÉˆÂÉˆÊª?ãQ(LevelEntity_EnergyDisk_Lv1_MoveSpeedDown¢ã°íñ—Œí
+?äQ#LevelEntity_EnergyDisk_Lv1_HealDownÒ¦§Œ‰¡ú
+?åQ/LevelEntity_EnergyDisk_Lv1_ChargeEfficiencyDownª¶ˆ·	É¿•‡?æQ—(LevelEntity_EnergyDisk_Lv1_DashStaminaUpÂ²Ğ»¡çù?çQ˜+LevelEntity_EnergyDisk_Lv3_SkillCDIncrement‚¨©Ú‘Í¾ç?èQ™2LevelEntity_EnergyDisk_Lv1_RecoverStaminaRatioDownÊ¨ññÑ‹Õ?éQš*LevelEntity_EnergyDisk_Lv1_NoShieldAtkDown‚ä”ı¹¯öø?êQ›(LevelEntity_EnergyDisk_Lv3_AtkDownHighHP’çªëÙÃíô?ëQœ'LevelEntity_EnergyDisk_Lv3_AtkDownLowHPª–ÔÀ‰µˆ»?ìQ)LevelEntity_EnergyDisk_Lv3_SpeedDownLowHPÊ¡®Ù·İ?íQ/LevelEntity_EnergyDisk_Lv3_SprintBeHurtDamageUpº‰ıÅæ‰*?îQŸ:LevelEntity_EnergyDisk_Lv3_BeHurtDamageUpAfterChangeAvatarŠÎ…˜áÏ§Û?ïQ 1LevelEntity_EnergyDisk_Lv4_BeHurtDamageUpAfterULTÊÅ‘ÂÙüÖ?ğQ¡'LevelEntity_EnergyDisk_Lv2_AtkDownLowHP¢¢±õ¹Ó¨À?úQ«7LevelEntity_EnergyDisk_DeathRattleCrystal_ExtraLifeTime²ãü¹	‰‘ŠÎ?ûQ¬4LevelEntity_EnergyDisk_DeathRattleCrystal_ExtraTimes²Çì ¹‘É¯?üQ­*LevelEntity_EnergyDisk_Sovereign_ExtraHealêÕ³¥Áò »?ıQ®&LevelEntity_EnergyDisk_Sovereign_AtkUpº¹¦˜‰ß’ï?şQµLevel_Spiral_Abyss_Charge_EmptyšãïØ‘®¿Ü?ÿQ¶Level_Spiral_Abyss_Charge_Empty‚‹Ú‚±üÈê?€R·Level_Spiral_Abyss_Charge_EmptyÒ²îø¹ßƒù?R¸Level_Spiral_Abyss_Charge_Empty¢ï£‹‘ã™Ñ
+?‚R¹Level_Spiral_Abyss_Charge_EmptyÚì†Â	‘şÌÒ?ƒRºLevel_Spiral_Abyss_Charge_EmptyúÔ¹ô	ñÊï?„R»Level_Spiral_Abyss_Charge_EmptyÚÃŸ¤¹§Úx?…Ré
+Level_Swril_TestúşÇ€ÙÖ”ª;†Ré
+LevelEntity_Monster_HpUp_Lv3úöÙÎ	ÉÍÙÁ?‡Rê
+Level_Spiral_Abyss_Charge_Empty’¬Œö™Â´ˆ?ˆRë
+#LevelEntity_TowerBuff_SwirlDoAttackÂ·¨àù–’„?‰Rì
++LevelEntity_TowerBuff_SwirlReviveElemEnergyª§Ë.™àÛ½?ŠRí
+"LevelEntity_TowerBuff_SwirlDoFieldÊÆöÉÊÇõ?‹Rİ,LevelEntity_EffigyChallenge_Monster_HpUp_LV1²ìĞâÁ§ÙÜ?ŒRŞ,LevelEntity_EffigyChallenge_Monster_HpUp_LV2‚ÿ¹ÙùÁø˜
+?Rß,LevelEntity_EffigyChallenge_Monster_HpUp_LV3â¸şıÉ½âÁ?Rà4LevelEntity_EffigyChallenge_OceanidA_IceSubHurtDeltaÂø²ŠÙ†ñ³?Rá5LevelEntity_EffigyChallenge_OceanidA_ElecSubHurtDeltaªüØÊÁòœ³?Râ*LevelEntity_EffigyChallenge_OceanidA_AtkUpŠÂÍœ
+éÿ„ü?‘Rã-LevelEntity_EffigyChallenge_OceanidA_HurtDownÂ©ù„Ñ¼µ€?’Rä9LevelEntity_EffigyChallenge_OceanidA_SprintBeHurtDamageUp¢÷¨
+¹ßÒ¯
+?“Rå;LevelEntity_EffigyChallenge_BeHurtDamageUpAfterChangeAvatarÊÒÊ†‘”°ê?”Ræ2LevelEntity_EffigyChallenge_OceanidA_AtkDownHighHP’ÈÕë¡‘¯¬?•Rç6LevelEntity_EffigyChallenge_OceanidA_AtkTriggerAoe_LV1ªğˆ½¹È€ë?–Rè6LevelEntity_EffigyChallenge_OceanidA_AtkTriggerAoe_LV2’Ö™¢é—áß?—Ré6LevelEntity_EffigyChallenge_OceanidA_AtkTriggerAoe_LV3Š¸æåÉ½ñ?˜Rê8LevelEntity_EffigyChallenge_OceanidA_AtkUpWhenNoHarm_LV1Ú…¸‰Ä?™Rë8LevelEntity_EffigyChallenge_OceanidA_AtkUpWhenNoHarm_LV2ò‡³ß¹İå?šRì8LevelEntity_EffigyChallenge_OceanidA_AtkUpWhenNoHarm_LV3ÂÌÂ­©ƒ©?›Rí9LevelEntity_EffigyChallenge_Drake_PrimoA_FireSubHurtDelta‚­’ãÉÙ€ğ?œRî:LevelEntity_EffigyChallenge_Drake_PrimoA_WaterSubHurtDeltaê¼ªùÁŠÔ¿?Rï.LevelEntity_EffigyChallenge_Drake_PrimoA_AtkUpê½ğÊÉÜÒ?Rğ;LevelEntity_EffigyChallenge_Drake_PrimoA_LowHPTriggerLoseHP¢€ÍŸ±Ë?ŸRñ;LevelEntity_EffigyChallenge_OceanidB_BeHurtDamageUpAfterULTÂÊáŒ¹”–­? Rò6LevelEntity_EffigyChallenge_Drake_PrimoA_AtkDownHighHPÚÓÚ	ù½Ã?¡Ró>LevelEntity_EffigyChallenge_OceanidB_SkillCDIncrementAtkUp_LV1òÆÓÆÑÕĞÿ?¢Rô>LevelEntity_EffigyChallenge_OceanidB_SkillCDIncrementAtkUp_LV2š—¥ßÑ™î‘?£Rõ>LevelEntity_EffigyChallenge_OceanidB_SkillCDIncrementAtkUp_LV3²à”bñ¾¾	?¤Rö<LevelEntity_EffigyChallenge_Samurai_NingyoA_RockSubHurtDelta²ï‰’¡§„…?¥R÷<LevelEntity_EffigyChallenge_Samurai_NingyoA_WindSubHurtDeltaºüÏëÑÂ·…?¦Rø1LevelEntity_EffigyChallenge_Samurai_NingyoA_AtkUpúàşÁÖ©è?§Rù;LevelEntity_EffigyChallenge_BeHurtDamageUpAfterChangeAvatarò²³‡©‘‚¼?¨Rú;LevelEntity_EffigyChallenge_Drake_PrimoB_OnAvatarIn_AtkDownÒ»’¡Òñİ?©Rû=LevelEntity_EffigyChallenge_Drake_PrimoB_SprintAreaAttack_LV1²‰šü™Î†•?ªRü=LevelEntity_EffigyChallenge_Drake_PrimoB_SprintAreaAttack_LV2‚€©àáíœ?«Rı=LevelEntity_EffigyChallenge_Drake_PrimoB_SprintAreaAttack_LV3ú˜ù”©·¿Ù?¬Rş5LevelEntity_EffigyChallenge_OceanidB_FireSubHurtDeltaò°âù¡É¹?­Rÿ4LevelEntity_EffigyChallenge_OceanidB_PhysicalSubHurtªŠÁÕ	¹´ôµ?®R€*LevelEntity_EffigyChallenge_OceanidB_AtkUpÒß’	Ê§Á
+?¯R8LevelEntity_EffigyChallenge_OceanidB_ShieldCostMinusDownª§¿‘±àú?°R‚/LevelEntity_EffigyChallenge_OceanidB_CritLoseHp²òÒ±ø¸­?±Rƒ;LevelEntity_EffigyChallenge_OceanidB_BeHurtDamageUpAfterULT¢’ØLÉ¸Äø	?²R„1LevelEntity_EffigyChallenge_OceanidB_FrozenRevive’ÔéÎÁÏ¬ƒ?³R…@LevelEntity_EffigyChallenge_OceanidB_LowHpAtkUpAndTriggerAoe_LV1ºƒ„¯™ÁÛø?´R†@LevelEntity_EffigyChallenge_OceanidB_LowHpAtkUpAndTriggerAoe_LV2º¼àÁ™íÿ¤?µR‡@LevelEntity_EffigyChallenge_OceanidB_LowHpAtkUpAndTriggerAoe_LV3âÙĞÂÁòŒ…?¶Rˆ&LevelEntity_EffigyChallenge2_ShieldLv1ê¦ò¸‰Ê¦”?·R‰&LevelEntity_EffigyChallenge2_ShieldLv2ÒÍÊ¡	ùÎ›è?¸RŠ&LevelEntity_EffigyChallenge2_ShieldLv3’ ßÒùûŒô?¹R‹-LevelEntity_EffigyChallenge2_SkillCDIncrementª¶ŞĞÑÕ‚Y?ºRŒ;LevelEntity_EffigyChallenge_Drake_PrimoB_HasShieldSpeedDown’ç½á±â„¨?»R'LevelEntity_EffigyChallenge2_ChargeDownÒª‹¹†æˆ?¼R%LevelEntity_EffigyChallenge2_HealDownš™ŒñàÃã;½R5LevelEntity_EffigyChallenge2_SpecialAvatarDamageUp_01â‚‰¾ÁÁ©†;¾R5LevelEntity_EffigyChallenge2_SpecialAvatarDamageUp_02¢¬…¥
+Áïş„;¿R‘5LevelEntity_EffigyChallenge2_SpecialAvatarDamageUp_03Â×ĞóÑÂáè;ÀR’5LevelEntity_EffigyChallenge2_SpecialAvatarDamageUp_04Òšå“‘‹—ó?ÁR“>LevelEntity_EffigyChallenge_Samurai_NingyoA_CritDownAfterBurstâ‚”ñÉŒ€€	?ÂRî
+0LevelEntityTowerBuff_OnGainEnergyMax_DefenseDownºäƒ¤	‘íÌ?ÃRï
+2LevelEntityTowerBuff_OnGainEnergyByBall_TriggerAoeÚİ±ØÙìı×?ÄRğ
+/LevelEntityTowerBuff_AtkUpAfterUseUltimateSkillâš±¨¹®…§
+?ÅRÀLevel_Spiral_Abyss_Charge_Emptyªò²ğ™ØÖ²;ÆRÀLevelEntity_Monster_HpUp_Lv3Ú·ˆéõ¹Š?ÇRÁLevel_Spiral_Abyss_Charge_Empty¢ô…æ
+Éó³è;ÈRÁLevelEntity_Monster_HpUp_Lv3Úë;±İ”…?ÉRÂ+LevelEntityTowerBuff_ElementAddHurt_Fire_V2²ËÅ½Ñ¾ø˜?ÊRÂ*LevelEntityTowerBuff_ElementAddHurt_Ice_V2â¶‘]Ùô¼æ;ËRÂLevelEntity_Monster_HpUp_Lv3¢´‰Üñêôû	?ÌRÃLevel_Spiral_Abyss_Charge_Empty²ÿ¾Â¹à°¥
+?ÍRÃLevel_Spiral_Abyss_Charge_Emptyò§àÄ™Ÿê¦?ÎRÃLevel_Spiral_Abyss_Charge_Empty¢¤öáÅ„ƒ	;ÏRÃLevelEntity_Monster_HpUp_Lv4‚áì
+±ÚâJ?ĞRÄ,LevelEntity_LoopBuff_ElementAddHurt_Electric¢¸ø£©„¹	?ÑRÄLevel_Spiral_Abyss_Charge_EmptyÚŸ¯Ç	±‡µ§?ÒRÅLevel_Spiral_Abyss_Charge_EmptyŠ õğ	±ä’‹?ÓRÅ*LevelEntity_LoopBuff_GainCrystalTriggerAoe‚éÈ´±„Üƒ?ÔRÆLevel_Spiral_Abyss_Charge_EmptyŠ«ášÁ„Çï?ÕRÆLevel_Spiral_Abyss_Charge_EmptyòÅ»’Ñ“¨”?ÖRÆLevel_Spiral_Abyss_Charge_Emptyê“‡Œáİ±;×RÇ'LevelEntity_Activity_BlitzRush_FlipCard’‰™ñ®İ¾?ØRÈ+LevelEntityTowerBuff_Deathrattle_CorruptionÊÓ™¶ÙÚïˆ?ÙRÈLevel_Spiral_Abyss_Charge_Empty’Ã·±‰Ñ®»?ÚRÈLevel_Spiral_Abyss_Charge_Emptyªˆª¸‰Ê‰};ÛRÈLevelEntity_Monster_HpUp_Lv3Ú·áƒ¹ùèÚ?ÜRÉLevel_Spiral_Abyss_Charge_Emptyú’çÔ¹ˆ«Š?İRÉLevel_Spiral_Abyss_Charge_Emptyº´ñ‰‘·­?ŞRÉLevel_Spiral_Abyss_Charge_EmptyÊ ®ÿÑ´Çò;ßRÉLevelEntity_Monster_HpUp_Lv4²»ªÁı×Ä?àRÊ8LevelEntityTowerBuff_AtkUpAfterUseUltimateSkill_Multiple²ÀÈ³éÀ˜â?áRË4LevelEntityTowerBuff_AoeAfterUseUltimateSkill_LoseHpšÈõ«
+á¸ëæ?âRÌ LevelEntity_Sumo_PhysicalAddHurt²¤â¢¡ÒÍÚ;ãRÌ/LevelEntity_Sumo_NoSwitch_Punishment_ForMonsterºèíˆÙÖåí;äRÌLevelEntity_Monster_HpUp_Lv3Âé˜ë
+‰ŸË?åRÍ$LevelEntity_Sumo_ElementAddHurt_FireÂ¿úú¹ã‚ø;æRÍ/LevelEntity_Sumo_NoSwitch_Punishment_ForMonsterªƒª™É‚”Ñ;çRÍLevelEntity_Monster_HpUp_Lv4ÚÂ†Ä‘ğ¡à?èRÎ$LevelEntity_Sumo_ElementAddHurt_WindºäÚïá…Ï;éRÎ/LevelEntity_Sumo_NoSwitch_Punishment_ForMonster‚‡°èÑŞ¢¡
+;êRÎLevelEntity_Monster_HpUp_Lv5ê§òŸÙˆş?ëRÏ$LevelEntity_Sumo_ElementAddHurt_RockÒÎ€ãù±£±	;ìRÏ/LevelEntity_Sumo_NoSwitch_Punishment_ForMonsterŠéÒéÙ—à;íRÏLevelEntity_Monster_HpUp_Lv4ÚéûºÙçº¸?îRĞ,LevelEntity_Sumo_ElementAddHurt_ElecAndWaterÚ™ºÿ‰š¯Š;ïRĞ/LevelEntity_Sumo_NoSwitch_Punishment_ForMonsteròÌ˜ÉÃÑÕ;ğRĞLevelEntity_Monster_HpUp_Lv4ŠÄø¶ñÉñÉ?ñRÑ%LevelEntity_Sumo_ElementAddHurt_Reactú°è»ùøêõ;òRÑ/LevelEntity_Sumo_NoSwitch_Punishment_ForMonsterÂÆ‘øéö»ê;óRÑLevelEntity_Monster_HpUp_Lv3ÒñÏÃ™Ö´¡?ôRÒLevel_Spiral_Abyss_Charge_EmptyÚŒæ@áØ‡®;õRÒLevelEntity_Monster_HpUp_Lv4ª¹È‘©ÇÊ¸?öRÓLevel_LaSignoraúŞì¾Ñû½ş?÷RÓLevel_LaSignoraÂØ±İ¹ÒÇÂ;øRÔ3LevelEntity_Activity_Rogue_Monster_DiePatternSwitch¢Û¾ù
+Ñïóÿ;ùRÔ.LevelEntity_Activity_Rogue_Monster_HPUp_Stage1‚ñôË	ñÄƒQ;úRÕ3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchÚÌõÍ¡áˆÍ;ûRÕ.LevelEntity_Activity_Rogue_Monster_HPUp_Stage2¢À©é±ë·…;üRÖ3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchê¹¾ƒ¡İÍO;ıRÖ.LevelEntity_Activity_Rogue_Monster_HPUp_Stage3¢–Šš¹Ò¡²;şR×3LevelEntity_Activity_Rogue_Monster_DiePatternSwitch‚®­õ¡öáŒ;ÿR×.LevelEntity_Activity_Rogue_Monster_HPUp_Stage4‚„Ş¾‘Çâİ;€SØ3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchÂéÔÓÙÇÉ…;SØ.LevelEntity_Activity_Rogue_Monster_HPUp_Stage5ÊÅì¨¹Ã‡Å	;‚SÙ3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchÂÇĞâÑçª„;ƒSÙ.LevelEntity_Activity_Rogue_Monster_HPUp_Stage6ò…ã±ù¡ù™;„SÚ3LevelEntity_Activity_Rogue_Monster_DiePatternSwitch‚½…ÖÑÖÍÔ;…SÚ.LevelEntity_Activity_Rogue_Monster_HPUp_Stage7¢Â½àÁ«Ì‹
+?†SÛ+LevelEntityTowerBuff_ElementAddHurt_Fire_V2¢Ï¸ö™º§Ó?‡SÛ$LevelEntity_ElementAddHurt_Water_V22úÂ×äùÛúÎ;ˆSÛLevelEntity_Monster_HpUp_Lv3ê·«Üé‡³’?‰SÜLevel_Spiral_Abyss_Charge_EmptyÂØÀ´	ÁÈÎ;ŠSÜLevelEntity_Monster_HpUp_Lv4šÈ‚º±ºÙÅ	?‹Sİ-LevelEntityTowerBuff_HighEnergyAtkUp_MultipleÚíî´
+á¨ï?ŒSŞ/LevelEntityTowerBuff_MaxEnergyDamageUp_MultipleÒÇÂîñ“½?Sß)LevelEntityTowerBuff_HighEnergyTriggerAoe‚åé´¡ã¤;Sà3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchÚêœ­
+±‘şâ;Sá&LevelEntity_Activity_Hachi_LevelHandleÒ±Ñ‰Í—®?Sâ!LevelEntityTowerBuff_V2_3_Level04òÀç›‰»ù‚?‘Sâ!LevelEntityTowerBuff_V2_3_Level05’­ûê	±Üò¾;’SâLevelEntity_Monster_HpUp_Lv3ÚŒ•øáÍ–Á?“SãLevel_Spiral_Abyss_Charge_Empty‚íßÎ¹›Ğ’;”SãLevelEntity_Monster_HpUp_Lv4ÒÜúÙøúê	?•Sä!LevelEntityTowerBuff_V2_3_Level01¢Ÿøõ‰‹–	?–Så!LevelEntityTowerBuff_V2_3_Level02Ú¾ñŒ™˜ˆ?—Sæ!LevelEntityTowerBuff_V2_3_Level03Â×İ‰	ã§–?˜SÓLevel_LaSignoraòÙ¼Œ
+á®’©;™Sç3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchâı½çé‹ó¥;šSç.LevelEntity_Activity_Rogue_Monster_HPUp_Stage8šµÏ›Ù—ù;›Sè3LevelEntity_Activity_Rogue_Monster_DiePatternSwitchŠÑñ±¡ú’”;œSè.LevelEntity_Activity_Rogue_Monster_HPUp_Stage9ºê‰’¡Õ°¦;Sé:LevelEntity_Activity_ChannellerSlab_Monster_Sylph_ChargeUp‚ŸûşìÙÇ;SêCLevelEntity_Activity_ChannellerSlab_Monster_Sylph_DeathrattleChargeê“Œ
+±åV;ŸSë?LevelEntity_Activity_ChannellerSlab_Monster_Hound_AttackEnhanceÒø­ó‰…œ‘; Sì=LevelEntity_Activity_ChannellerSlab_Monster_Hound_ResetStrikeŠ¦Îûá½”ƒ;¡Sí-LevelEntity_ChannellerSlabV2_Monster_HpUp_Lv1Ê¢Æéá™É;¢Sî-LevelEntity_ChannellerSlabV2_Monster_HpUp_Lv2ª¥ÚàéÇ¦õ	;£Sï-LevelEntity_ChannellerSlabV2_Monster_HpUp_Lv3ú…™ÛÉ“Óî;¤Sğ.LevelEntity_ChannellerSlabV2_Monster_AtkUp_Lv1ÚçéÁ¹ˆã©
+;¥Sñ7LevelEntity_ChannellerSlabV2_Avatar_ShieldCostMinusDownÒÚä®Ù”ğ•;¦Sò1LevelEntity_ChannellerSlabV2_Avatar_MoveSpeedDownÂ ˜‰”ã	;§Só1LevelEntity_ChannellerSlabV2_Avatar_DashStaminaUpÒ‹»ß	‰Åå«;¨Sô4LevelEntity_ChannellerSlabV2_Avatar_SkillCDIncrementúİõÉ‘ÀÊÙ;©Sõ;LevelEntity_ChannellerSlabV2_Avatar_RecoverStaminaRatioDownú„Å’
+Ù‰Çş;ªSö3LevelEntity_ChannellerSlabV2_Avatar_NoShieldAtkDownŠ‘»£Á°º±;«S÷.LevelEntity_ChannellerSlabV2_Team_AtkDownLowHPºæ¢ı‘ı¾;¬Sø0LevelEntity_ChannellerSlabV2_Team_SpeedDownLowHPòŞ÷Ÿù¨Œ;­Sù8LevelEntity_ChannellerSlabV2_Avatar_SprintBeHurtDamageUpò†ğ½¡ËÖé;®SúALevelEntity_ChannellerSlabV2_Team_BeHurtDamageUpAfterChangeAvatar¢óÅ¡§¡‚;¯Sû8LevelEntity_ChannellerSlabV2_Team_BeHurtDamageUpAfterULTªÕñã‘©¢«;°Sü8LevelEntity_ChannellerSlabV2_Team_AtkDownLowHP_TwoStagesÂíœ‘¹¯ó ;±Sı?LevelEntity_Activity_ChannellerSlab_Monster_Sylph_AttackEnhanceÂËğ§™ƒ¼À;²Sş9LevelEntity_ChannellerSlabV2_Avatar_ChargeEfficiencyDeltaòÑèµ‘–òr?³S‡LevelEntity_Monster_HpUp_Lv3ê´Ç©©Ô•İ?´SˆLevel_Spiral_Abyss_Charge_EmptyÒÄğÁÛÔ?µS‰Level_Spiral_Abyss_Charge_EmptyÂşşõÉ–¥ö?¶SŠ,LevelEntity_Activity_Potion_LevelBuff_Stage1‚¼Š…¡ƒÕã?·S‹:LevelEntity_Activity_Potion_LevelBuff_QuicklyAttack_Stage2Úéãş±®‰Ø?¸SŒ,LevelEntity_Activity_Potion_LevelBuff_Stage3’¡ÑÂáíÖ¯?¹S/LevelEntity_ElementAddHurt_Electric_LoopDungeonê¦ò‰	‰”¼Î	?ºS=LevelEntity_TowerBuff_LoopDungeon_ElementReactionAttack_ShockÚ–ˆêé’É–?»S$LevelEntity_TowerBuff_NormalAttackUpÒÁÜÇ©•Ç’;¼SLevelEntity_Monster_HpUp_Lv3Š’³µ¡À¯î	?½SLevel_Spiral_Abyss_Charge_EmptyŠÂÇÎá¦Ö;¾SLevelEntity_Monster_HpUp_Lv4âŸ¿¸©—í?¿S1LevelEntity_TowerBuff_NormalExFallSustainAttackUpÊ‘Ø/¡®‘÷
+?ÀS‘-LevelEntity_TowerBuff_NormalAttackRandomShock‚§é¾Áàó„?ÁS’6LevelEntity_TowerBuff_NormalExFallSustainAttackShockUpò¦Äˆ¹çªª
+;ÂSŠ<LevelEntity_Activity_Potion_AdditionalHPAndAttack_ForMonster‚¹öµ‘ÌİÇ;ÃS‹<LevelEntity_Activity_Potion_AdditionalHPAndAttack_ForMonsterª¿ª•©ƒ¼.;ÄSŒ<LevelEntity_Activity_Potion_AdditionalHPAndAttack_ForMonsterªÍÆ²ù£ä¯;ÅS“/LevelEntity_Sumo_NoSwitch_Punishment_ForMonsterš©—ÉŒŸç?ÆS”4LevelEntity_TowerBuff_ReduceMonster_ElecAddHurtDeltaªè Éû±«?ÇS•:LevelEntity_TowerBuff_AvatarHitMonsterHasElec_ImpactDamage’ıƒ€áİÚ©?ÈS–'LevelEntity_TowerBuff_ImproveElecDamageÚşÏØ¹äÙÃ?ÉS–!LevelEntity_TowerBuff_ImproveHealú¡Æ™±İ¥¾;ÊS–LevelEntity_Monster_HpUp_Lv3úº£û’Ê¯?ËS—Level_Spiral_Abyss_Charge_EmptyºœùÌ
+Á…„;ÌS—LevelEntity_Monster_HpUp_Lv4ò¸âÕé÷Ø“?ÍS˜Level_Spiral_Abyss_Charge_Empty²ğÄùËı¬;ÎS™)LevelEntity_CrystalLink_MonsterEnhanced01ò¸˜Ìáá‰;ÏSš)LevelEntity_CrystalLink_MonsterEnhanced02Š±æÃ™œå’;ĞS›)LevelEntity_CrystalLink_MonsterEnhanced03ú¦İĞá‚ü¥;ÑSœ)LevelEntity_CrystalLink_MonsterEnhanced04ªŠ¢õ¡äµ¿;ÒS)LevelEntity_CrystalLink_MonsterEnhanced05‚´ÄŸ
+Éë«©;ÓS)LevelEntity_CrystalLink_MonsterEnhanced06š–—ĞÁ÷üğ?ÔSŸ1LevelEntity_TowerBuff_NormalAttackTriggerBomb_V26’±„ä
+ñÖùş?ÕS .LevelEntity_TowerBuff_NormalAttackDamageUp_V26òÄÕ¾¼©È?ÖS¡.LevelEntity_TowerBuff_MonsterElementBeHurt_V26šÍ¶Á¦´?×S¢LevelEntity_ElementAddHurt_Windš¢×¡á•Ÿp;ØS¢LevelEntity_Monster_HpUp_Lv3âó¨cÙ«áÙ?ÙS£Level_Spiral_Abyss_Charge_Empty’èö¬	¹Ÿ’ı;ÚS£LevelEntity_Monster_HpUp_Lv4ò»©¯	¡²ÆŒ?ÛS˜Level_Spiral_Abyss_Charge_Empty¢ÎäİÑ‰Ì?ÜS™>LevelEntity_ActivityAbility_CrystalLink_UltimateSkill_AttackUpú»àÎé¾ê
+?İSš5LevelEntity_ActivityAbility_CrystalLink_QuicklyAttackòÔÿÚ
+ÙÿŞ¢?ŞS›8LevelEntity_ActivityAbility_CrystalLink_ElectricDamageUpúß£ÃÙéáÊ?ßSœ<LevelEntity_ActivityAbility_CrystalLink_GetRockSeed_DamageUpÚ½óı‰¢Ú±?àSBLevelEntity_ActivityAbility_CrystalLink_UltimateSkill_Skill_LoseHPúÄ²Òé»ß±?áSLLevelEntity_ActivityAbility_CrystalLink_Skill_UltimateSkill_DamageUp_ByCurHPŠØæÎ
+™®×§	;âS_LevelEntity_ActivityAbility_CrystalLink_DeathRattle_Corruption_LoseHPEff_ChallangeFinishHandlerº ¸â¹ÖÆ?ãS@LevelEntity_ActivityAbility_CrystalLink_FrozenTarget_DefenceDownÒĞæàùäİB?äS¤2LevelEntity_LoopDungeon_UseSkill_GenerateBlastWaveÊºä¸‘ÉÖÅ;åS¥LevelEntity_Monster_HpUp_Lv4ÚÄüó
+ÙôÓ­	?æS¦1LevelEntity_TowerBuff_UseSkill_AddNormalAtkDamageÒ¦ş£¹¯²Ê	?çS§7LevelEntity_TowerBuff_UseSkillHit_DecreaseTargetSubHurtêƒ‘²ÑğïÂ?èS¨>LevelEntity_TowerBuff_AvatarElementArt_HitMonster_ImpactDamage¢Áø†é¹¢ğ?éS©+LevelEntity_TowerAvatarBuff_ClaymoreAddHurt‚ÖÌËÑÿö;êS©LevelEntity_Monster_HpUp_Lv3Ò„–å¹ÇÅå?ëSªLevel_Spiral_Abyss_Charge_Empty²šşé‘à¡;ìSªLevelEntity_Monster_HpUp_Lv4¢À¶¦Áû÷°;íS«)LevelEntity_RogueV2_AdditionalHP_HardMode’äÿ¹¹‚“·;îS«(LevelEntity_RogueV2_AdditionalHP_Dynamic¢ÉôŒİŸ€?ïS¬/LevelEntity_TowerBuff_TickAtkUp_ExtraTriggerCJB²ÿ˜¬±Ñü­?ğS­&LevelEntity_TowerBuff_SwirlDefenseDownêœÎúáÆ…«?ñS®7LevelEntity_TowerBuff_CurAvatarAttackUp_NormalExtraFall²¥à˜
+Éö×ò?òS¯LevelEntity_ElementAddHurt_Fireêíäµ¡ìÔÇ;óS¯LevelEntity_Monster_HpUp_Lv3ºÈšøÉ¾çú?ôS°Level_Spiral_Abyss_Charge_EmptyšœÄÊ©ÄÑ½;õS°LevelEntity_Monster_HpUp_Lv4Â¶´¸ñ’ïï	;öS±=LevelEntity_Activity_SummerTimeV2_Dungeon_Mona_StruggleBubbleŠĞ‚ùÑ²ù¹?÷S²,LevelEntity_TowerBuff_ElemReactOvergrowDeltaªë³£™Œê¨;øS²LevelEntity_Monster_HpUp_Lv3êëÍÄáó¨¡
+?ùS³,LevelEntity_TowerBuff_ElemReactOverdoseDelta²†™¬¹Úë;úS³LevelEntity_Monster_HpUp_Lv3’ËÒ‰û·Ñ?ûS´"LevelEntity_TowerBuff_GrassAddHurtÂõ›üéÉôÑ	;üS´LevelEntity_Monster_HpUp_Lv3²ÓôÎù¼èù?ıSµLevel_Spiral_Abyss_Charge_Emptyò¦µÀÉ›‘»;şSµLevelEntity_Monster_HpUp_Lv4â¶¾ÿù½®Ö?ÿS¶0LevelEntity_TowerBuff_OverdoseTriggerDefenseDownú‹Õïùœ‡?€T·*LevelEntity_TowerBuff_OverGrowTriggerAtkUpú¾•ÁëìÛ;T¸=LevelEntity_MonsterAffix_PropertiesUp_ForInstableSpray_Stage1‚¦ÈÒá³’¢;‚T¹=LevelEntity_MonsterAffix_PropertiesUp_ForInstableSpray_Stage2ºî«‰‘ãÖÑ;ƒTº=LevelEntity_MonsterAffix_PropertiesUp_ForInstableSpray_Stage3ò±ñ¤¡ìÎŞ;„T»=LevelEntity_MonsterAffix_PropertiesUp_ForInstableSpray_Stage4ê‚…–
+‘Ğ’±
+;…T¼0LevelEntity_Ability_SummerTimeV2_BeHit_HasShieldšÆ¿Ã¹Øä…;†T¼=LevelEntity_Ability_SummerTimeV2_Dungeon_FallingAttack_Impact‚ôĞÂéÑõ
+?‡T½)LevelBuff_LoopDungeon_DamageUp_ElemDamageÊŒ•ñ“úÅ	?ˆT¾4LevelBuff_LoopDungeon_OverdoseTarget_ElemSubHurtDown‚®»½Ñ…±Ô?‰T¿5LevelBuff_LoopDungeon_MasteryUp_ByAllCharacterMasteryò¥óÑ‘¤Î;ŠT¿9LevelBuff_LoopDungeon_MasteryUp_ByAllCharacterMastery_Sum‚©èÁÔÂ¯;‹TÀLevel_DreamDungeon_Kazuha¢Óş‹©ŠÁƒ;ŒTÁLevel_Spiral_Abyss_Charge_Empty’ÆÔã©•ÉÛ;TÂLevel_Spiral_Abyss_Charge_EmptyÊÎàñ£Óä;TÃLevel_Spiral_Abyss_Charge_Emptyò™æí	éŒ‘Ô;TÄLevel_Spiral_Abyss_Charge_EmptyÊ˜¢¡ÙÈËÙ;TÅLevel_Spiral_Abyss_Charge_Empty²Ÿí™Ş‘¼;‘TÆLevel_Spiral_Abyss_Charge_Emptyê˜õ¹	é‚û²;’TÇLevel_Spiral_Abyss_Charge_Empty’ù¢úÑ†çâ
+?“TÈ3LevelEntity_TowerBuff_OverGrowTriggerCriticalHurtUpÊ›åá¾Í?”TÉ0LevelEntity_TowerBuff_OverdoseTriggerSubHurtDownŠêïÖ‘‘òÊ?•TÊ#LevelEntity_ElementAddHurt_ElectricÚ©˜›é‘‹
+;–TÊLevelEntity_Monster_HpUp_Lv3‚¤êñ¡¦ü?—TËLevel_Spiral_Abyss_Charge_Emptyâ§§ ‘°âi;˜TËLevelEntity_Monster_HpUp_Lv4Êü¾¾ùŸÒ´?™TÌ5LevelEntity_TowerBuff_OverGrowTriggerElemMasteryDeltaÊÉü¡Ğç®?šTÍ7LevelEntity_TowerBuff_OverGrowTriggerMonsterSubHurtDownŠêÇ†	éî£ì?›TÎ-LevelEntity_TowerBuff_OverGrowTriggerCJB_V3.1ÂÎ”òÁ¨¥?œTÏ5ActivityAbility_LevelEntity_Challenge_FallingWindZoneÒ¢ÒŸñ’´?TĞ:ActivityAbility_LevelEntity_Challenge_GrassReaction_Impact‚Ñ“-¹Ò¯Å	;TÑ7LevelEntity_Activity_CharAmusement_ShieldBreak_KillSelfâÅ¡ÏÙµÚ÷?ŸTÒ&LevelEntity_TowerBuff_ElemMasteryDeltaú›¢¨½¿; TÒLevelEntity_Monster_HpUp_Lv3ªÏœÓÉ•œ…?¡TÓLevel_Spiral_Abyss_Charge_Emptyú³öê
+Áùà;¢TÓLevelEntity_Monster_HpUp_Lv4ÂöÄËÁ¦¼§?£TÔ%LevelBuff_TowerBuff_ElemDamage_ImpactŠìİŞÙÿ-?¤TÕ(LevelBuff_TowerBuff_GrassReaction_Impact‚S‰ÁĞ
+?¥TÖLevel_Spiral_Abyss_Charge_Emptyš”àÓ¡°õ‰?¦TÖLevel_Spiral_Abyss_Charge_Emptyâº˜œÑ‰Š	?¬TÖLevel_Spiral_Abyss_Charge_EmptyºÃ ‰›¦½?­T×LevelEntity_ElementAddHurt_Windšˆ’ÆÉˆøù;®T×LevelEntity_Monster_HpUp_Lv3êŞğ	™Ôªå?¯TØLevel_Spiral_Abyss_Charge_Emptyò„ëûÅ ;°TØLevelEntity_Monster_HpUp_Lv4²ğàõ
+áÚˆó?±TÙ*LevelBuff_TowerBuff_CurAvatar_ElemDamageUp²‚ï÷¡‘­½?²TÚ*LevelEntity_TowerBuff_Swirl_CriticalHurtUpš‰áØ¹Óä£?³TÛ/LevelBuff_TowerBuff_CurAvatar_KeepTtkTriggerCJBúÊÄò±ÕÜÀ?´TÜ3LevelEntity_LoopDungeon_MasteryUp_WindDamageUp_V3.3²ÔãìÉÕğ;µTÒLevel_Effigy_GrassšŸŸßÁ°§ÿ;¶TİLevelEntity_MistTrialV3_01ª²¬öÉêÛ¨;·TŞLevelEntity_MistTrialV3_02â©Û¬Ù¬Ò¤?¸TßLevel_Spiral_Abyss_Charge_Empty‚€„Ò±®àı?¹Tà,LevelBuff_ActivityTeamChainV3.4_In_Tide_BUffòûºäÉœÖí	?ºTä'LevelBuff_ActivityTeamChainV3.4_CJBBUffÊÓ…™ÑÈïŒ?»TâLevel_Spiral_Abyss_Charge_Emptyò»û‰	©®ÍË?¼TãLevel_Spiral_Abyss_Charge_EmptyúŒ‚ß±ïĞˆ	;½Tá)LevelEntity_Quest_NahidaDungeon_AmberBuffÂªœ‘ñÄÒŞ?¾Tå'LevelBuff_ChallengeBuff_Overdose_ImpactÚ…‚à
+‘˜õğ?¿Tæ"LevelEntity_TowerBuff_GrassAddHurtšØñ´æŠ;ÀTæLevelEntity_Monster_HpUp_Lv3ÂâŸ“¡ş‡¨	?ÁTçLevel_Spiral_Abyss_Charge_EmptyÊı¹ˆ‘ğ±Ó;ÂTçLevelEntity_Monster_HpUp_Lv4Â¨ãÔùõ‹‚?ÃTè2LevelBuff_TowerBuff_OverdoseTarget_ElemSubHurtDown²ÿÑ•‘Šq?ÄTé(LevelBuff_TowerBuff_GrassDamage_Multipleâò‚Û™¿Õ“?ÅTê3LevelBuff_TowerBuff_OverdoseGrassAndElectric_Impactâ°‰Î±ã·‹
