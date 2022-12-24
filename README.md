@@ -52,8 +52,8 @@ YSRes/    (main folder)
 ## Future Goals
 
 - Args support
-- Tower data
 - GenerateElemBall data
+- Arca readability improvement (shorten skill level)
 
 ## Credit
 - partypooper for the original [KaitaiDumper](https://github.com/partypooperarchive/KaitaiDumper)
