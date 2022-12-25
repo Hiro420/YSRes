@@ -574,6 +574,9 @@ def GenerateRes(parseCharacterID, textMapLanguage):
 
         current_row = current_row + len(res["Passives"]) + 1
 
+        print("Skill output selection")
+        skillOutput = input("1~15 Full levels (f, default), 1 10 13 Short levels (s) : ")
+
         for i in range(len(res["Skills"])):
             ws.merge_range(current_row, 0, current_row, 15, res["Skills"][i]["Name"], name_format)
             current_row += 1
@@ -581,40 +584,79 @@ def GenerateRes(parseCharacterID, textMapLanguage):
             ws.set_row(current_row, 200) # Skill issue
             current_row += 1
             
-            ws.write(current_row, 0, "Modifier", name_format)
-            for j in range(15):
-                ws.write(current_row, j+1, "Lv." + str(j+1), name_format)
-            current_row += 1
-
-            for j in list(res["Skills"][i]["Param"].keys()):
-                ws.write(current_row, 0, j.upper(), name_format)
-
-                param_form = res["Skills"][i]["Param"][j]["Name"].split("|")[1]
-
-                pattern = "\{param.*?:(.*?)\}"
-                param_parsed = re.split(pattern, param_form)
-                type_val = {
-                    "P": "{0:.0%}",
-                    "F1P": "{0:.1%}",
-                    "F2P": "{0:.2%}",
-                    "I": "{:0.0f}",
-                    "F1": "{:0.1f}",
-                    "F2": "{:0.2f}",
-                }
-                
-                for k in range(15):
-                    values = res["Skills"][i]["Param"][j]["Levels"][k]
-                    out_val = ""
-                    for val in param_parsed:
-                        if val in list(type_val.keys()):
-                            out_val += type_val[val].format(values.pop(0))
-                        else:
-                            out_val += val
-
-                    ws.write(current_row, k+1, out_val, desc_format)
-                
+            if skillOutput.lower() == "s" or skillOutput.lower() == "short":
+                # start short version
+                ws.merge_range(current_row, 0, current_row, 3, "Modifier", name_format)
+                for j in [0, 9, 12]:
+                    ws.merge_range(current_row, ([0, 9, 12].index(j) + 1) * 4, current_row, ([0, 9, 12].index(j) + 1) * 4 + 3, "Lv." + str(j+1), name_format)
                 current_row += 1
-        
+                
+                for j in list(res["Skills"][i]["Param"].keys()):
+                    ws.merge_range(current_row, 0, current_row, 3, j.upper(), name_format)
+
+                    param_form = res["Skills"][i]["Param"][j]["Name"].split("|")[1]
+
+                    pattern = "\{param.*?:(.*?)\}"
+                    param_parsed = re.split(pattern, param_form)
+                    type_val = {
+                        "P": "{0:.0%}",
+                        "F1P": "{0:.1%}",
+                        "F2P": "{0:.2%}",
+                        "I": "{:0.0f}",
+                        "F1": "{:0.1f}",
+                        "F2": "{:0.2f}",
+                    }
+                    
+                    for k in [0, 9, 12]:
+                        values = list(res["Skills"][i]["Param"][j]["Levels"][k])
+                        out_val = ""
+                        for val in param_parsed:
+                            if val in list(type_val.keys()):
+                                out_val += type_val[val].format(values.pop(0))
+                            else:
+                                out_val += val
+
+                        ws.merge_range(current_row, ([0, 9, 12].index(k) + 1) * 4, current_row, ([0, 9, 12].index(k) + 1) * 4 + 3, out_val, desc_format)
+                    current_row += 1
+                # end
+
+            else:
+                # start full version
+                ws.write(current_row, 0, "Modifier", name_format)
+                for j in range(15):
+                    ws.write(current_row, j+1, "Lv." + str(j+1), name_format)
+                current_row += 1
+
+                for j in list(res["Skills"][i]["Param"].keys()):
+                    ws.write(current_row, 0, j.upper(), name_format)
+
+                    param_form = res["Skills"][i]["Param"][j]["Name"].split("|")[1]
+
+                    pattern = "\{param.*?:(.*?)\}"
+                    param_parsed = re.split(pattern, param_form)
+                    type_val = {
+                        "P": "{0:.0%}",
+                        "F1P": "{0:.1%}",
+                        "F2P": "{0:.2%}",
+                        "I": "{:0.0f}",
+                        "F1": "{:0.1f}",
+                        "F2": "{:0.2f}",
+                    }
+                    
+                    for k in range(15):
+                        values = list(res["Skills"][i]["Param"][j]["Levels"][k])
+                        out_val = ""
+                        for val in param_parsed:
+                            if val in list(type_val.keys()):
+                                out_val += type_val[val].format(values.pop(0))
+                            else:
+                                out_val += val
+
+                        ws.write(current_row, k+1, out_val, desc_format)
+                    current_row += 1
+                # end
+
+
             current_row += 1
 
         wb.close()
