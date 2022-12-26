@@ -1,13 +1,13 @@
 {
-    "Name": "Yaoyao",
+    "Name": "요요",
     "Desc": "",
     "CharaInfo": {
         "Birth": [
-            1,
-            1
+            3,
+            6
         ],
-        "Vision": "Dendro",
-        "Constellation": "Oleaceae",
+        "Vision": "풀",
+        "Constellation": "물푸레자리",
         "Region": "ASSOC_TYPE_LIYUE",
         "VA": {
             "Chinese": "？？？",
@@ -372,11 +372,11 @@
     },
     "Skills": [
         {
-            "Name": "Normal Attack: Toss 'N' Turn Spear",
-            "Desc": "<color=#FFD780FF>Normal Attack</color>\\nPerforms up to 4 consecutive spear strikes.\\n\\n<color=#FFD780FF>Charged Attack</color>\\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\\n\\n<color=#FFD780FF>Plunging Attack</color>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+            "Name": "일반 공격·돌격 연환창",
+            "Desc": "<color=#FFD780FF>일반 공격</color>\\n창으로 최대 4번 공격한다.\\n\\n<color=#FFD780FF>강공격</color>\\n일정 스태미나를 소모해 전방으로 돌진하여 경로상의 적에게 피해를 준다.\\n\\n<color=#FFD780FF>낙하 공격</color>\\n공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다",
             "Param": {
-                "1-hit dmg": {
-                    "Name": "1-Hit DMG|{param2:F1P}",
+                "1단 공격 피해": {
+                    "Name": "1단 공격 피해|{param1:F1P}",
                     "Levels": [
                         [
                             0.510013997554779
@@ -425,8 +425,8 @@
                         ]
                     ]
                 },
-                "2-hit dmg": {
-                    "Name": "2-Hit DMG|{param2:F1P}",
+                "2단 공격 피해": {
+                    "Name": "2단 공격 피해|{param2:F1P}",
                     "Levels": [
                         [
                             0.4744279980659485
@@ -475,8 +475,8 @@
                         ]
                     ]
                 },
-                "3-hit dmg": {
-                    "Name": "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+                "3단 공격 피해": {
+                    "Name": "3단 공격 피해|{param3:F1P}+{param4:F1P}",
                     "Levels": [
                         [
                             0.31377100944519043,
@@ -540,8 +540,8 @@
                         ]
                     ]
                 },
-                "4-hit dmg": {
-                    "Name": "4-Hit DMG|{param5:F1P}",
+                "4단 공격 피해": {
+                    "Name": "4단 공격 피해|{param5:F1P}",
                     "Levels": [
                         [
                             0.7793149948120117
@@ -590,8 +590,8 @@
                         ]
                     ]
                 },
-                "charged attack dmg": {
-                    "Name": "Charged Attack DMG|{param6:F1P}",
+                "강공격 피해": {
+                    "Name": "강공격 피해|{param6:F1P}",
                     "Levels": [
                         [
                             1.1266000270843506
@@ -640,8 +640,8 @@
                         ]
                     ]
                 },
-                "charged attack stamina cost": {
-                    "Name": "Charged Attack Stamina Cost|{param7:F1}",
+                "강공격 스태미나 소모": {
+                    "Name": "강공격 스태미나 소모|{param7:F1}pt",
                     "Levels": [
                         [
                             25.0
@@ -690,8 +690,8 @@
                         ]
                     ]
                 },
-                "plunge dmg": {
-                    "Name": "Plunge DMG|{param8:F1P}",
+                "낙하 기간 피해": {
+                    "Name": "낙하 기간 피해|{param8:F1P}",
                     "Levels": [
                         [
                             0.6393240094184875
@@ -740,8 +740,8 @@
                         ]
                     ]
                 },
-                "low/high plunge dmg": {
-                    "Name": "Low/High Plunge DMG|{param9:P}/{param10:P}",
+                "저공/고공 추락 충격 피해": {
+                    "Name": "저공/고공 추락 충격 피해|{param9:P}/{param10:P}",
                     "Levels": [
                         [
                             1.2783770561218262,
@@ -808,11 +808,11 @@
             }
         },
         {
-            "Name": "Raphanus Sky Cluster",
-            "Desc": "Calls upon \"Yuegui: Throwing Mode,\" a special device created by a certain adeptus to help Yaoyao solve her problems.\\nThis skill will be used differently in Holding Mode.\\n\\n<color=#FFD780FF>Hold</color>\\nEnters Aiming Mode to adjust the throw direction.\\n\\n<color=#FFD780FF>Yuegui: Throwing Mode</color>\\nThrows out White Jade Radishes that will explode upon hitting characters or opponents, dealing <color=#99FF88FF>Dendro DMG</color> to opponents within a certain AoE, and healing characters based on Yaoyao's Max HP. If a radish does not hit either an opponent or a character, the radish will remain where it is and explode on contact with a character or opponent, or will explode after its duration expires.\\n·Yuegui: Throwing Mode will choose its radish-throw targets.\\n·If nearby characters have more than 70% HP on average, then it will throw the radish at a nearby opponent.\\n·If nearby characters have 70% or less HP on average, it will throw a radish at the character with the lowest HP percentage remaining. If no opponents exist nearby, Yuegui will throw White Jade Radishes at characters even if they have more than 70% HP on average.\\n\\n2 instances Yuegui: Throwing Mode can exist at any one time.\\n\\n<i>\"A radish a day keeps trouble away! ... Oh, this isn't about a radish's medical properties, exactly, but it does have some health benefits, yeah!\"</i>",
+            "Name": "하늘에서 무가 내려와",
+            "Desc": "어떤 선인이 만든 「월계·투척형」 기관을 출전시켜 요요를 돕는다.\\n홀드 시 다른 방식으로 발동한다.\\n\\n<color=#FFD780FF>홀드</color>\\n조준 상태로 진입해 투척할 방향을 결정한다.\\n\\n<color=#FFD780FF>월계·투척형</color>\\n하얀 무를 투척한다. 하얀 무는 캐릭터나 적에게 명중 시, 폭발하여 일정 범위 내의 적에게 <color=#99FF88FF>풀 원소 피해</color>를 주고, 범위 내 캐릭터의 HP를 회복한다. HP 회복량은 요요의 HP 최대치에 따라 결정된다. 적이나 캐릭터에게 명중하지 못할 경우, 하얀 무는 낙하한 곳에 남아서 적이나 캐릭터와 접촉하거나 지속 시간이 끝나면 폭발한다.\\n월계·투척형은 주변 상황에 따라 하얀 무를 투척할 목표를 선택한다:\\n·모든 주변 캐릭터의 HP가 70%를 초과하면 주변의 적 1명에게 하얀 무를 투척한다.\\n·주변에 HP가 70% 이하인 캐릭터가 존재하면, 주변 필드 위 캐릭터 중 HP 비율이 가장 낮은 캐릭터에게 하얀 무를 투척한다. 주변에 적이 존재하지 않으면, 모든 캐릭터의 HP가 70%를 초과해도 캐릭터를 향해 하얀 무를 투척한다.\\n\\n월계·투척형은 동시에 최대 2개까지 존재할 수 있다.\\n\\n<i>「몸에 좋고 맛도 좋은 무가 왔어! 아, 무가 만병통치약이라는 뜻은 아니야. 그래도 먹으면 몸에 좋을 거라구!」</i>",
             "Param": {
-                "white jade radish dmg": {
-                    "Name": "White Jade Radish DMG|{param1:F1P}",
+                "하얀 무 피해": {
+                    "Name": "하얀 무 피해|{param1:F1P}",
                     "Levels": [
                         [
                             0.29919999837875366
@@ -861,8 +861,8 @@
                         ]
                     ]
                 },
-                "white jade radish healing": {
-                    "Name": "White Jade Radish Healing|{param2:F1P} Max HP+{param3:I}",
+                "하얀 무 치유량": {
+                    "Name": "하얀 무 치유량|HP 최대치의 {param2:F2P}+{param3:I}",
                     "Levels": [
                         [
                             0.017142999917268753,
@@ -926,8 +926,8 @@
                         ]
                     ]
                 },
-                "yuegui: throwing mode duration": {
-                    "Name": "Yuegui: Throwing Mode Duration|{param4:F1}s",
+                "월계·투척형 지속 시간": {
+                    "Name": "월계·투척형 지속 시간|{param4:F1}초",
                     "Levels": [
                         [
                             10.0
@@ -976,8 +976,8 @@
                         ]
                     ]
                 },
-                "white jade radish duration": {
-                    "Name": "White Jade Radish Duration|{param5:F1}s",
+                "하얀 무 지속 시간": {
+                    "Name": "하얀 무 지속 시간|{param5:F1}초",
                     "Levels": [
                         [
                             5.0
@@ -1026,8 +1026,8 @@
                         ]
                     ]
                 },
-                "cd": {
-                    "Name": "CD|{param6:F1}s",
+                "재사용 대기시간": {
+                    "Name": "재사용 대기시간|{param6:F1}초",
                     "Levels": [
                         [
                             15.0
@@ -1079,11 +1079,11 @@
             }
         },
         {
-            "Name": "Moonjade Descent",
-            "Desc": "At the enjoinment of a certain adeptus, Yuegui's full potential can be unleashed in an emergency, dealing <color=#99FF88FF>Dendro DMG</color> to nearby opponents and entering an (in some sense) unsurpassed Adeptal Legacy state.\\n\\n<color=#FFD780FF>Adeptal Legacy</color>\\n·White Jade Radishes generated will be changed to heal and deal DMG according to this skill. Explosions will heal all nearby party members, and the <color=#99FF88FF>Dendro DMG</color> that they deal will be viewed as Elemental Burst DMG.\\n·Summons \"Yuegui: Jumping Mode\" at intervals until their limit has been reached. The behavior of this version of Yuegui is the same as that of \"Yuegui: Throwing Mode\" in the Elemental Skill, Raphanus Sky Cluster. A maximum of 3 Yuegui: Jumping Mode can exist at any one time.\\n·Yaoyao's Movement SPD is increased by 15%.\\n·Yaoyao's <color=#99FF88FF>Dendro RES</color> will be increased.\\n\\nThe Adeptal Legacy state will end once Yaoyao is off-field, and all Yuegui: Jumping Mode will be cleared once this state ends.\\n\\n<i>\"Eh? Which one of these is actually Yuegui, you ask? Aren't they all Yuegui?\"</i>",
+            "Name": "달빛 아래 떨어지는 옥구슬",
+            "Desc": "어떤 선인이 만든 「월계·투척형」 기관을 출전시켜 요요를 돕는다.\\n홀드 시 다른 방식으로 발동한다.\\n\\n<color=#FFD780FF>홀드</color>\\n조준 상태로 진입해 투척할 방향을 결정한다.\\n\\n<color=#FFD780FF>월계·투척형</color>\\n하얀 무를 투척한다. 하얀 무는 캐릭터나 적에게 명중 시, 폭발하여 일정 범위 내의 적에게 <color=#99FF88FF>풀 원소 피해</color>를 주고, 범위 내 캐릭터의 HP를 회복한다. HP 회복량은 요요의 HP 최대치에 따라 결정된다. 적이나 캐릭터에게 명중하지 못할 경우, 하얀 무는 낙하한 곳에 남아서 적이나 캐릭터와 접촉하거나 지속 시간이 끝나면 폭발한다.\\n월계·투척형은 주변 상황에 따라 하얀 무를 투척할 목표를 선택한다:\\n·모든 주변 캐릭터의 HP가 70%를 초과하면 주변의 적 1명에게 하얀 무를 투척한다.\\n·주변에 HP가 70% 이하인 캐릭터가 존재하면, 주변 필드 위 캐릭터 중 HP 비율이 가장 낮은 캐릭터에게 하얀 무를 투척한다. 주변에 적이 존재하지 않으며, 모든 캐릭터의 HP가 70%를 초과하고 100% 미만인 경우, 캐릭터를 향해 하얀 무를 투척한다. 그게 아니면 주위를 향해 랜덤으로 투척한다.\\n\\n월계·투척형은 동시에 최대 2개까지 존재할 수 있다.\\n\\n<i>「몸에 좋고 맛도 좋은 무가 왔어! 아, 무가 만병통치약이라는 뜻은 아니야. 그래도 먹으면 몸에 좋을 거라구!」</i>",
             "Param": {
-                "skill dmg": {
-                    "Name": "Skill DMG|{param4:F1P}",
+                "스킬 피해": {
+                    "Name": "스킬 피해|{param4:F1P}",
                     "Levels": [
                         [
                             0.7215999960899353
@@ -1132,8 +1132,8 @@
                         ]
                     ]
                 },
-                "adeptal legacy white radish dmg": {
-                    "Name": "Adeptal Legacy White Radish DMG|{param1:F1P}",
+                "선인의 슬기 하얀 무 피해": {
+                    "Name": "선인의 슬기 하얀 무 피해|{param1:F1P}",
                     "Levels": [
                         [
                             0.02016800083220005
@@ -1182,8 +1182,8 @@
                         ]
                     ]
                 },
-                "adeptal legacy white jade radish healing": {
-                    "Name": "Adeptal Legacy White Jade Radish Healing|{param2:F1P} Max HP+{param3:I}",
+                "선인의 슬기 하얀 무 치유량": {
+                    "Name": "선인의 슬기 하얀 무 치유량|HP 최대치의 {param2:F2P}+{param3:I}",
                     "Levels": [
                         [
                             194.21231079101562,
@@ -1247,8 +1247,8 @@
                         ]
                     ]
                 },
-                "dendro res bonus": {
-                    "Name": "Dendro RES Bonus|{param5:F1P}",
+                "풀 원소 내성 증가": {
+                    "Name": "풀 원소 내성 증가|{param5:P}",
                     "Levels": [
                         [
                             0.5
@@ -1297,8 +1297,8 @@
                         ]
                     ]
                 },
-                "yuegui: jumping mode duration": {
-                    "Name": "Yuegui: Jumping Mode Duration|{param6:F1}s",
+                "선인의 슬기 지속 시간": {
+                    "Name": "선인의 슬기 지속 시간|{param6:F1}초",
                     "Levels": [
                         [
                             5.0
@@ -1347,8 +1347,8 @@
                         ]
                     ]
                 },
-                "adeptal legacy duration": {
-                    "Name": "Adeptal Legacy Duration|{param7:F1}s",
+                "재사용 대기시간": {
+                    "Name": "재사용 대기시간|{param7:F1}초",
                     "Levels": [
                         [
                             20.0
@@ -1397,8 +1397,8 @@
                         ]
                     ]
                 },
-                "cd": {
-                    "Name": "CD|{param8:F1}s",
+                "원소 에너지": {
+                    "Name": "원소 에너지|{param8:I}",
                     "Levels": [
                         [
                             80.0
@@ -1452,8 +1452,8 @@
     ],
     "Passives": [
         {
-            "Name": "Starscatter",
-            "Desc": "While affected by the Adeptal Legacy state caused by <color=#FFD780FF>Moonjade Descent</color>, Yaoyao will constantly throw White Jade Radishes at nearby opponents when she is sprinting, jumping, or running. She can throw 1 White Jade Radish this way once every 0.6s.",
+            "Name": "별 뿌리기",
+            "Desc": "<color=#FFD780FF>달빛 아래 떨어지는 옥구슬</color>의 선인의 슬기 상태 시, 요요가 달리기, 대시 또는 점프 중에 끊임없이 근처의 적을 향해 하얀 무를 던진다. 해당 방식으로 하얀 무를 0.6초마다 최대 1개 던질 수 있다",
             "Unlock": 1,
             "ParamList": [
                 0.6000000238418579,
@@ -1479,8 +1479,8 @@
             ]
         },
         {
-            "Name": "In Others' Shoes",
-            "Desc": "When <color=#FFD780FF>White Jade Radishes</color> explode, active characters within their AoE will regain HP every 2s based on 20% of Yaoyao's Max HP. This effect lasts Xs.",
+            "Name": "역지사지",
+            "Desc": "<color=#FFD780FF>하얀 무</color>가 폭발 시 영향 범위 내에 있는 필드 위의 캐릭터가 HP를 1초마다 1회 회복한다. 회복량은 요요 HP 최대치의 0.8%만큼을 기반으로 한다. 지속 시간: 5초",
             "Unlock": 4,
             "ParamList": [
                 1.0,
@@ -1506,8 +1506,8 @@
             ]
         },
         {
-            "Name": "Tailing on Tiptoes",
-            "Desc": "When Yaoyao is in the party, your characters will not startle Crystalflies and certain other animals when getting near them.\\nCheck the \"Other\" sub-category of the \"Living Beings / Wildlife\" section in the Archive for creatures this skill works on.",
+            "Name": "까치발·살금살금",
+            "Desc": "요요가 파티에 있을 시, 수정 나비 등 일부 생물은 파티 내 자신의 캐릭터가 접근해도 놀라지 않는다.\\n해당 효과의 유효 대상은 도감에 있는 「생물지 / 야생 생물」의 「기타」 분류에서 확인할 수 있다",
             "Unlock": 0,
             "ParamList": [
                 0.0,
@@ -1535,8 +1535,8 @@
     ],
     "Constellations": [
         {
-            "Name": "Adeptus' Tutelage",
-            "Desc": "When <color=#FFD780FF>White Jade Radishes</color> explode, active characters within their AoE will gain 15% <color=#99FF88FF>Dendro DMG Bonus</color> for 8s and have 15 Stamina restored to them. This form of Stamina Restoration can only be triggered every 5s.",
+            "Name": "선인의 가르침",
+            "Desc": "<color=#FFD780FF>하얀 무</color>가 폭발 시, 영향 범위 안에 있는 필드 위의 캐릭터가 <color=#99FF88FF>풀 원소 피해 보너스</color> 15%를 획득한다. 지속 시간: 8초. 또한 스태미나를 15pt 회복한다. 해당 방식으로는 스태미나를 5초마다 최대 1회만 회복할 수 있다",
             "ParamList": [
                 8.0,
                 0.15000000596046448,
@@ -1548,8 +1548,8 @@
             ]
         },
         {
-            "Name": "Innocent",
-            "Desc": "While affected by the Adeptal Legacy state caused by <color=#FFD780FF>Moonjade Descent</color>, if White Jade Radish explosions damage opponents, 3 Energy will be restored to Yaoyao. This form of Energy regeneration can occur once every 0.8s.",
+            "Name": "바르고 착한 마음",
+            "Desc": "<color=#FFD780FF>달빛 아래 떨어지는 옥구슬</color>의 선인의 슬기 상태 시, 하얀 무의 폭발이 적에게 명중할 경우, 요요가 원소 에너지를 3pt 회복한다. 해당 방식으로 원소 에너지를 0.8초마다 최대 1회 회복할 수 있다",
             "ParamList": [
                 3.0,
                 0.800000011920929,
@@ -1561,8 +1561,8 @@
             ]
         },
         {
-            "Name": "Loyal and Kind",
-            "Desc": "Increases the Level of <color=#FFD780FF>Sky Raphanus Cluster</color> by 3.\\nMaximum upgrade level is 15.",
+            "Name": "올곧은 길",
+            "Desc": "<color=#FFD780FF>하늘에서 무가 내려와</color>의 스킬 레벨+3. 최대 Lv.15까지 상승",
             "ParamList": [
                 0.0,
                 0.0,
@@ -1574,8 +1574,8 @@
             ]
         },
         {
-            "Name": "Winsome",
-            "Desc": "After using <color=#FFD780FF>Raphanus Sky Cluster</color> or <color=#FFD780FF>Moonjade Descent</color>, Yaoyao's Elemental Mastery will be increased based on 0.3% of her Max HP for 8s. The maximum Elemental Mastery she can gain this way is 120.",
+            "Name": "귀염둥이",
+            "Desc": "<color=#FFD780FF>하늘에서 무가 내려와</color> 또는 <color=#FFD780FF>달빛 아래 떨어지는 옥구슬</color> 발동 후, 요요 HP 최대치의 0.3%만큼 요요의 원소 마스터리가 증가한다. 지속 시간: 8초. 해당 방식으로 원소 마스터리는 최대 120pt까지 증가한다",
             "ParamList": [
                 0.003000000026077032,
                 8.0,
@@ -1587,8 +1587,8 @@
             ]
         },
         {
-            "Name": "Compassionate",
-            "Desc": "Increases the Level of <color=#FFD780FF>Moonjade Descent</color> by 3.\\nMaximum upgrade level is 15.",
+            "Name": "동정심",
+            "Desc": "<color=#FFD780FF>달빛 아래 떨어지는 옥구슬</color>의 스킬 레벨+3. 최대 Lv.15까지 상승",
             "ParamList": [
                 0.0,
                 0.0,
@@ -1600,10 +1600,10 @@
             ]
         },
         {
-            "Name": "Beneficent",
-            "Desc": "When <color=#FFD780FF>Yuegui: Throwing Mode</color> throws out a White Radish, there is a 50% chance that it will throw out a Mega Radish that will have a larger AoE than the standard White Jade Radish and have the following effects upon exploding:\\n·Deals <color=#99FF88FF>AoE Dendro DMG</color> based on 75% of Yaoyao's ATK.\\n·Restores HP for the active character based on 7.5% of Yaoyao's Max HP.\\n\\nEvery Yuegei: Throwing Mode can throw out a maximum of 2 Mega Radishes.",
+            "Name": "자애롭고 어진 마음",
+            "Desc": "<color=#FFD780FF>월계·투척형</color>이 하얀 무를 2회 투척하면, 그 다음 투척 시 초특대·짱짱무 1개를 추가로 투척한다. 초특대·짱짱무는 하얀 무보다 영향 범위가 넓으며, 폭발 시 다음과 같은 효과가 발생한다.\\n·요요 공격력의 75%만큼 <color=#99FF88FF>풀 원소 범위 피해</color>를 준다.\\n·요요 HP 최대치 7.5%만큼 필드 위의 캐릭터의 HP를 회복한다.\\n\\n각 월계·투척형은 초특대·짱짱무를 최대 2회만 투척할 수 있다",
             "ParamList": [
-                0.5,
+                0.0,
                 0.75,
                 0.07500000298023224,
                 0.0,
@@ -1618,15 +1618,15 @@
             {
                 "Mats": [
                     {
-                        "Name": "Nagadus Emerald Sliver",
+                        "Name": "자라나는 비취 가루",
                         "Count": 1
                     },
                     {
-                        "Name": "Jueyun Chili",
+                        "Name": "절운고추",
                         "Count": 3
                     },
                     {
-                        "Name": "Slime Condensate",
+                        "Name": "슬라임 응축액",
                         "Count": 3
                     }
                 ],
@@ -1635,19 +1635,19 @@
             {
                 "Mats": [
                     {
-                        "Name": "Nagadus Emerald Fragment",
+                        "Name": "자라나는 비취 조각",
                         "Count": 3
                     },
                     {
-                        "Name": "Quelled Creeper",
+                        "Name": "분쟁을 멈추는 넝쿨",
                         "Count": 2
                     },
                     {
-                        "Name": "Jueyun Chili",
+                        "Name": "절운고추",
                         "Count": 10
                     },
                     {
-                        "Name": "Slime Condensate",
+                        "Name": "슬라임 응축액",
                         "Count": 15
                     }
                 ],
@@ -1656,19 +1656,19 @@
             {
                 "Mats": [
                     {
-                        "Name": "Nagadus Emerald Fragment",
+                        "Name": "자라나는 비취 조각",
                         "Count": 6
                     },
                     {
-                        "Name": "Quelled Creeper",
+                        "Name": "분쟁을 멈추는 넝쿨",
                         "Count": 4
                     },
                     {
-                        "Name": "Jueyun Chili",
+                        "Name": "절운고추",
                         "Count": 20
                     },
                     {
-                        "Name": "Slime Secretions",
+                        "Name": "슬라임청",
                         "Count": 12
                     }
                 ],
@@ -1677,19 +1677,19 @@
             {
                 "Mats": [
                     {
-                        "Name": "Nagadus Emerald Chunk",
+                        "Name": "자라나는 비취 덩이",
                         "Count": 3
                     },
                     {
-                        "Name": "Quelled Creeper",
+                        "Name": "분쟁을 멈추는 넝쿨",
                         "Count": 8
                     },
                     {
-                        "Name": "Jueyun Chili",
+                        "Name": "절운고추",
                         "Count": 30
                     },
                     {
-                        "Name": "Slime Secretions",
+                        "Name": "슬라임청",
                         "Count": 18
                     }
                 ],
@@ -1698,19 +1698,19 @@
             {
                 "Mats": [
                     {
-                        "Name": "Nagadus Emerald Chunk",
+                        "Name": "자라나는 비취 덩이",
                         "Count": 6
                     },
                     {
-                        "Name": "Quelled Creeper",
+                        "Name": "분쟁을 멈추는 넝쿨",
                         "Count": 12
                     },
                     {
-                        "Name": "Jueyun Chili",
+                        "Name": "절운고추",
                         "Count": 45
                     },
                     {
-                        "Name": "Slime Concentrate",
+                        "Name": "슬라임 원액",
                         "Count": 12
                     }
                 ],
@@ -1719,19 +1719,19 @@
             {
                 "Mats": [
                     {
-                        "Name": "Nagadus Emerald Gemstone",
+                        "Name": "자라나는 비취",
                         "Count": 6
                     },
                     {
-                        "Name": "Quelled Creeper",
+                        "Name": "분쟁을 멈추는 넝쿨",
                         "Count": 20
                     },
                     {
-                        "Name": "Jueyun Chili",
+                        "Name": "절운고추",
                         "Count": 60
                     },
                     {
-                        "Name": "Slime Concentrate",
+                        "Name": "슬라임 원액",
                         "Count": 24
                     }
                 ],
@@ -1743,11 +1743,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Teachings of Diligence",
+                            "Name": "「근면」의 가르침",
                             "Count": 3
                         },
                         {
-                            "Name": "Slime Condensate",
+                            "Name": "슬라임 응축액",
                             "Count": 6
                         }
                     ],
@@ -1756,11 +1756,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 2
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 3
                         }
                     ],
@@ -1769,11 +1769,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 4
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 4
                         }
                     ],
@@ -1782,11 +1782,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 6
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 6
                         }
                     ],
@@ -1795,11 +1795,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 9
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 9
                         }
                     ],
@@ -1808,15 +1808,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 4
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 4
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 1
                         }
                     ],
@@ -1825,15 +1825,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 6
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 6
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 1
                         }
                     ],
@@ -1842,15 +1842,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 12
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 9
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 2
                         }
                     ],
@@ -1859,19 +1859,19 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 16
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 12
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 2
                         },
                         {
-                            "Name": "Crown of Insight",
+                            "Name": "지식의 왕관",
                             "Count": 1
                         }
                     ],
@@ -1882,11 +1882,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Teachings of Diligence",
+                            "Name": "「근면」의 가르침",
                             "Count": 3
                         },
                         {
-                            "Name": "Slime Condensate",
+                            "Name": "슬라임 응축액",
                             "Count": 6
                         }
                     ],
@@ -1895,11 +1895,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 2
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 3
                         }
                     ],
@@ -1908,11 +1908,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 4
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 4
                         }
                     ],
@@ -1921,11 +1921,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 6
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 6
                         }
                     ],
@@ -1934,11 +1934,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 9
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 9
                         }
                     ],
@@ -1947,15 +1947,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 4
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 4
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 1
                         }
                     ],
@@ -1964,15 +1964,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 6
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 6
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 1
                         }
                     ],
@@ -1981,15 +1981,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 12
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 9
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 2
                         }
                     ],
@@ -1998,19 +1998,19 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 16
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 12
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 2
                         },
                         {
-                            "Name": "Crown of Insight",
+                            "Name": "지식의 왕관",
                             "Count": 1
                         }
                     ],
@@ -2021,11 +2021,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Teachings of Diligence",
+                            "Name": "「근면」의 가르침",
                             "Count": 3
                         },
                         {
-                            "Name": "Slime Condensate",
+                            "Name": "슬라임 응축액",
                             "Count": 6
                         }
                     ],
@@ -2034,11 +2034,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 2
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 3
                         }
                     ],
@@ -2047,11 +2047,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 4
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 4
                         }
                     ],
@@ -2060,11 +2060,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 6
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 6
                         }
                     ],
@@ -2073,11 +2073,11 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Guide to Diligence",
+                            "Name": "「근면」의 인도",
                             "Count": 9
                         },
                         {
-                            "Name": "Slime Secretions",
+                            "Name": "슬라임청",
                             "Count": 9
                         }
                     ],
@@ -2086,15 +2086,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 4
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 4
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 1
                         }
                     ],
@@ -2103,15 +2103,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 6
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 6
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 1
                         }
                     ],
@@ -2120,15 +2120,15 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 12
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 9
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 2
                         }
                     ],
@@ -2137,19 +2137,19 @@
                 {
                     "Mats": [
                         {
-                            "Name": "Philosophies of Diligence",
+                            "Name": "「근면」의 철학",
                             "Count": 16
                         },
                         {
-                            "Name": "Slime Concentrate",
+                            "Name": "슬라임 원액",
                             "Count": 12
                         },
                         {
-                            "Name": "Daka's Bell",
+                            "Name": "공행의 방울",
                             "Count": 2
                         },
                         {
-                            "Name": "Crown of Insight",
+                            "Name": "지식의 왕관",
                             "Count": 1
                         }
                     ],

@@ -20130,6 +20130,12 @@
         "icon": "UI_NameCardIcon_Bp21"
     },
     {
+        "id": 210151,
+        "nameTextMapHash": 3778817588,
+        "descTextMapHash": 4262357853,
+        "icon": "UI_NameCardIcon_Xm3"
+    },
+    {
         "id": 220001,
         "nameTextMapHash": 3352333292,
         "descTextMapHash": 533523237,
